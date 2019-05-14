@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="InventoryWarehouses"
+           tests="6"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="53.546">
+  <properties />
+  
+  
+            <testcase name="editWarehouseDetails" time="4.623" classname="com.turbopro.inventory.InventoryWarehouses" />
+                <testcase name="inactivateWarehouse" time="0.964" classname="com.turbopro.inventory.InventoryWarehouses" />
+                <testcase name="addWarehouse" time="30.492" classname="com.turbopro.inventory.InventoryWarehouses" />
+                <testcase name="deleteWarehouse" time="2.404" classname="com.turbopro.inventory.InventoryWarehouses" />
+                <testcase name="viewwarehousedetails" time="0.373" classname="com.turbopro.inventory.InventoryWarehouses" />
+                <testcase name="inventoryWarehouse" time="14.690" classname="com.turbopro.inventory.InventoryWarehouses" />
+      
+</testsuite>

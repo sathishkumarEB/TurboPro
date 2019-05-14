@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runCustomerUnappliedPayments"
+           tests="6"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="65.096">
+  <properties />
+  
+  
+            <testcase name="searchCusBasedUnappliedPayments" time="7.829" classname="com.turbopro.customermenu.CustomerUnappliedPayments" />
+                <testcase name="paySingleInvoice" time="13.902" classname="com.turbopro.customermenu.CustomerUnappliedPayments" />
+                <testcase name="customerUnappliedPayments" time="27.111" classname="com.turbopro.customermenu.CustomerUnappliedPayments" />
+                <testcase name="searchUnappliedPaymentByDate" time="1.346" classname="com.turbopro.customermenu.CustomerUnappliedPayments" />
+                <testcase name="sortUnappliedPayments" time="12.738" classname="com.turbopro.customermenu.CustomerUnappliedPayments" />
+                <testcase name="sortUnappliedPaymentInvoices" time="2.170" classname="com.turbopro.customermenu.CustomerUnappliedPayments" />
+      
+</testsuite>

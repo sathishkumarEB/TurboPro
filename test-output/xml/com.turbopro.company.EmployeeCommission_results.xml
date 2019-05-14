@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runEmployeeCommission"
+           tests="6"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="41.828">
+  <properties />
+  
+  
+            <testcase name="openAndCloseNewPeriod" time="0.676" classname="com.turbopro.company.EmployeeCommission" />
+                <testcase name="cancelReversePeriod" time="0.423" classname="com.turbopro.company.EmployeeCommission" />
+                <testcase name="employeeCommission" time="14.398" classname="com.turbopro.company.EmployeeCommission" />
+                <testcase name="viewCommissionForDiffPeriod" time="2.342" classname="com.turbopro.company.EmployeeCommission" />
+                <testcase name="cancelRecalculate" time="0.255" classname="com.turbopro.company.EmployeeCommission" />
+                <testcase name="printCommissionList" time="23.734" classname="com.turbopro.company.EmployeeCommission" />
+      
+</testsuite>

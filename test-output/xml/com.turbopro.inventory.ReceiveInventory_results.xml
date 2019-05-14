@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ReceiveInventory"
+           tests="7"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="90.636">
+  <properties />
+  
+  
+            <testcase name="receivePartialPOItems" time="30.346" classname="com.turbopro.inventory.ReceiveInventory" />
+                <testcase name="resetSearch" time="2.665" classname="com.turbopro.inventory.ReceiveInventory" />
+                <testcase name="selectDateRange" time="13.769" classname="com.turbopro.inventory.ReceiveInventory" />
+                <testcase name="ViewReceivedPO" time="5.168" classname="com.turbopro.inventory.ReceiveInventory" />
+                <testcase name="receiveLineItems" time="22.260" classname="com.turbopro.inventory.ReceiveInventory" />
+                <testcase name="searchPO" time="2.903" classname="com.turbopro.inventory.ReceiveInventory" />
+                <testcase name="inventoryReceive" time="13.525" classname="com.turbopro.inventory.ReceiveInventory" />
+      
+</testsuite>

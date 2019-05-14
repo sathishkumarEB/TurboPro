@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<!-- Suite -->
+<listeners>
+<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+</listeners>
+
+<test name="runVendorInvoicesAndBills">
+<classes>
+<class name="com.turbopro.vendors.VendorInvoicesAndBills"/>
+</classes>
+</test>
+
+
+<test name="runVendorPayBills">
+<classes>
+<class name="com.turbopro.vendors.VendorPayBills"/>
+</classes>
+</test>
+
+<test name="runVendorPurchaseOrders">
+<classes>
+<class name="com.turbopro.vendors.VendorPurchaseOrders"/>
+</classes>
+</test>
+
+</suite>
+

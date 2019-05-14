@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite (1)]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="runSalesOrderOutsideJob(failed)">
+    <classes>
+      <class name="com.turbopro.customermenu.SalesOrderOutsideJob">
+        <methods>
+          <include name="teardown"/>
+          <include name="beforeTest"/>
+          <include name="changeBillToInSalesOrder"/>
+        </methods>
+      </class> <!-- com.turbopro.customermenu.SalesOrderOutsideJob -->
+    </classes>
+  </test> <!-- runSalesOrderOutsideJob(failed) -->
+</suite> <!-- Failed suite [Suite (1)] -->

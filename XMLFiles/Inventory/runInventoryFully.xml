@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<!-- Suite -->
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="InventoryAdjustments">
+		<classes>
+			<class name="com.turbopro.inventory.InventoryAdjustments" />
+		</classes>
+	</test>
+
+	<test name="InventoryCategories">
+		<classes>
+			<class name="com.turbopro.inventory.InventoryCategories" />
+		</classes>
+	</test>
+
+	<test name="InventoryCount">
+		<classes>
+			<class name="com.turbopro.inventory.InventoryCount" />
+		</classes>
+	</test>
+
+	<test name="InventoryTransaction">
+		<classes>
+			<class name="com.turbopro.inventory.InventoryTransaction" />
+		</classes>
+	</test>
+	<test name="InventoryTransfer">
+		<classes>
+			<class name="com.turbopro.inventory.InventoryTransfer" />
+		</classes>
+	</test>
+	<test name="InventoryValue">
+		<classes>
+			<class name="com.turbopro.inventory.InventoryValue" />
+		</classes>
+	</test>
+	<test name="InventoryWarehouses">
+		<classes>
+			<class name="com.turbopro.inventory.InventoryWarehouses" />
+		</classes>
+	</test>
+	<test name="OrderPoints">
+		<classes>
+			<class name="com.turbopro.inventory.OrderPoints" />
+		</classes>
+	</test>
+	<test name="ReceiveInventory">
+		<classes>
+			<class name="com.turbopro.inventory.ReceiveInventory" />
+		</classes>
+	</test>
+
+</suite>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runGeneralLedger"
+           tests="6"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="146.838">
+  <properties />
+  
+  
+            <testcase name="drillIntoAccountDetails" time="123.176" classname="com.turbopro.company.GeneralLedger" />
+                <testcase name="generalLedger" time="11.591" classname="com.turbopro.company.GeneralLedger" />
+                <testcase name="viewAccountsByPeriodAndYear" time="3.567" classname="com.turbopro.company.GeneralLedger" />
+                <testcase name="viewAccountsByFiscalYearToDate" time="1.314" classname="com.turbopro.company.GeneralLedger" />
+                <testcase name="exportCSV" time="5.863" classname="com.turbopro.company.GeneralLedger" />
+                <testcase name="viewAccountsByMostRecentPeriod" time="1.327" classname="com.turbopro.company.GeneralLedger" />
+      
+</testsuite>

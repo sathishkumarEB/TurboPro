@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runAccountingCycles"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="56.763">
+  <properties />
+  
+  
+            <testcase name="closeFiscalYearAndRespondPopup" time="0.593" classname="com.turbopro.company.AccountingCycles" />
+                <testcase name="closeCurrentPeriod" time="33.542" classname="com.turbopro.company.AccountingCycles" />
+                <testcase name="fiscalYearCreateAndRespondPopup" time="1.093" classname="com.turbopro.company.AccountingCycles" />
+                <testcase name="accountingCycles" time="21.535" classname="com.turbopro.company.AccountingCycles" />
+      
+</testsuite>

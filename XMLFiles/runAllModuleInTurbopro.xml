@@ -1,0 +1,1017 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<!-- Suite -->
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="runBankingDetails">
+		<classes>
+			<class name="com.turbopro.banking.BankingDetails">
+				<methods>
+					<include name="navigateBanking" />
+					<include name="viewBanking" />
+					<include name="addBank" />
+					<include name="deleteBank" />
+					<include name="updateBankAccount" />
+					<include name="inactivateAccount" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="runReconcileAccounts">
+		<classes>
+			<class name="com.turbopro.banking.ReconcileAccounts">
+				<methods>
+					<include name="navigateToReconcileAccounts" />
+					<include name="selectBank" />
+					<include name="selectEndingDate" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="runReissueChecks">
+		<classes>
+			<class name="com.turbopro.banking.ReissueChecks">
+				<methods>
+					<include name="navigateToReissueIssues" />
+					<include name="printCheck" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="runTransactionDetails">
+		<classes>
+			<class name="com.turbopro.banking.TransactionDetails">
+				<methods>
+					<include name="navigateBankingTransactions" />
+					<include name="viewTransactionDetails" />
+					<include name="filterTransactionDetails" />
+					<include name="writeNewCheck" />
+					<include name="startTransaction" />
+					<include name="voidCheck" />
+					<include name="editTransaction" />
+					<include name="deleteTransaction" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="runWriteCheck">
+		<classes>
+			<class name="com.turbopro.banking.WriteCheck">
+				<methods>
+					<include name="navigateToWriteChecks" />
+					<include name="writeChecksForExistingBill" />
+					<include name="writeCheckForNewVendorInvoice" />
+					<include name="payMultipleInvoicesk" />
+					<include name="writeCheckForInvoiceFromPO" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+
+	<test name="runAccountingCycles">
+		<classes>
+			<class name="com.turbopro.company.AccountingCycles">
+				<methods>
+					<include name="accountingCycles" />
+					<include name="fiscalYearCreateAndRespondPopup" />
+					<include name="closeFiscalYearAndRespondPopup" />
+					<include name="closeCurrentPeriod" />
+					<include name="updateDescInAccountCycles" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="runChartOfAccounts">
+		<classes>
+			<class name="com.turbopro.company.ChartOfAccounts">
+				<methods>
+					<include name="chartOfAccounts" />
+					<include name="viewChartOfAccounts" />
+					<include name="viewAdditionalAccounts" />
+					<include name="addAccount" />
+					<include name="deleteAccount" />
+					<include name="searchSpecificAccount" />
+					<include name="updateDescInAccountCycles" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="runCustomers">
+		<classes>
+			<class name="com.turbopro.company.Customers">
+				<methods>
+					<include name="navigateToCustomers" />
+					<include name="viewDetails" />
+					<include name="addCustomer" />
+					<include name="addContacts" />
+					<include name="editContacts" />
+					<include name="addAddressDetails" />
+					<include name="addJournalEntry" />
+					<include name="addDiscountTerms" />
+					<include name="searchCustomer" />
+					<include name="resetCustomerTable" />
+					<include name="deleteCustomer" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="runDivisions">
+		<classes>
+			<class name="com.turbopro.company.Divisions">
+				<methods>
+					<include name="divisions" />
+					<include name="viewExistingDivisions" />
+					<include name="createDivision" />
+					<include name="inactiveDivision" />
+					<include name="activeDivision" />
+					<include name="deleteDivision" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="runEmployeeCommission">
+		<classes>
+			<class name="com.turbopro.company.EmployeeCommission">
+				<methods>
+					<include name="employeeCommission" />
+					<include name="viewCommissionForDiffPeriod" />
+					<include name="printCommissionList" />
+					<include name="openAndCloseNewPeriod" />
+					<include name="cancelRecalculate" />
+					<include name="cancelReversePeriod" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="runEmployees">
+		<classes>
+			<class name="com.turbopro.company.Employees">
+				<methods>
+					<include name="navigateToEmployees" />
+					<include name="viewEmployee" />
+					<include name="addEmployee" />
+					<include name="addContact" />
+					<include name="editContact" />
+					<include name="deleteContact" />
+					<include name="selectCategories" />
+					<include name="provideEmployeeDetails" />
+					<include name="deleteEmployeeDetails" />
+					<include name="viewActiveEmployees" />
+					<include name="viewInactiveEmployees" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="runGeneralLedger">
+		<classes>
+			<class name="com.turbopro.company.GeneralLedger">
+				<methods>
+					<include name="generalLedger" />
+					<include name="viewAccountsByPeriodAndYear" />
+					<include name="viewAccountsByMostRecentPeriod" />
+					<include name="viewAccountsByFiscalYearToDate" />
+					<include name="exportCSV" />
+					<include name="drillIntoAccountDetails" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="runGeneralLedgerBalanceTrialAndIncome">
+		<classes>
+			<class name="com.turbopro.company.GeneralLedgerBalanceTrialAndIncome">
+				<methods>
+					<include name="balanceSheet" />
+					<include name="viewBalanceSheetWithoutAccNumber" />
+					<include name="viewBalanceSheetWithAccNumber" />
+					<include name="trialBalance" />
+					<include name="viewTrialBalanceWithCurrentPeriodPrint" />
+					<include name="viewTrialBalanceWithoutCurrentPeriodPrint" />
+					<include name="incomeStatement" />
+					<include name="viewIncomeStatementWithAccNumber" />
+					<include name="viewIncomeStatementWithDivision" />
+					<include name="downloadCsvOfIncomeStatement" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="runRolodex">
+		<classes>
+			<class name="com.turbopro.company.Rolodex">
+				<methods>
+					<include name="navigateToRolodex" />
+					<include name="selectCategory" />
+					<include name="viewRolodex" />
+					<include name="addRolodex" />
+					<include name="addContact" />
+					<include name="editContact" />
+					<include name="deleteContact" />
+					<include name="addAddress" />
+					<include name="addJournal" />
+					<include name="editJournal" />
+					<include name="deleteRolodex" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="runSettings">
+		<classes>
+			<class name="com.turbopro.company.Settings">
+				<methods>
+					<include name="settings" />
+					<include name="uploadCompanyLogo" />
+					<include name="exportCompanyContacts" />
+					<include name="updateGroupDefaults" />
+					<include name="viewCustomerType" />
+					<include name="addCustomerType" />
+					<include name="deleteCustomerType" />
+					<include name="viewCustomerPaymentTerms" />
+					<include name="createCustomerPaymentTerms" />
+					<include name="deleteCustomerPaymentTerms" />
+					<include name="viewShipVia" />
+					<include name="addShipVia" />
+					<include name="deleteShipVia" />
+					<include name="viewFreightCharges" />
+					<include name="addFreightCharges" />
+					<include name="deleteFreightCharges" />
+					<include name="addSplitTypesInEmpSettings" />
+					<include name="deleteSplitTypesInEmpSettings" />
+					<include name="viewBidStatus" />
+					<include name="addBidStatus" />
+					<include name="deleteBidStatus" />
+					<include name="addQuotesCategory" />
+					<include name="deleteQuotesCategory" />
+					<include name="createDepartments" />
+					<include name="inactiveDepartment" />
+					<include name="deleteDepartments" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="runTaxTerritories">
+		<classes>
+			<class name="com.turbopro.company.TaxTerritories">
+				<methods>
+					<include name="taxTerritory" />
+					<include name="viewTaxTerritoryDetails" />
+					<include name="addAndCancelTaxTerritory" />
+					<include name="createTaxTerritory" />
+					<include name="deleteTaxTerritory" />
+					<include name="updateTaxTerritoryDetails" />
+					<include name="inactiveTaxTerritory" />
+					<include name="activeTaxTerritory" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="runUsers">
+		<classes>
+			<class name="com.turbopro.company.Users">
+				<methods>
+					<include name="navigateToUsers" />
+					<include name="viewUserDetails" />
+					<include name="editUserDetails" />
+					<include name="createNewUser" />
+					<include name="searchUser" />
+					<include name="viewActiveUsers" />
+					<include name="viewInactiveUsers" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="runVendors">
+		<classes>
+			<class name="com.turbopro.company.Vendors">
+				<methods>
+					<include name="vendors" />
+					<include name="searchVendor" />
+					<include name="openExistingVendor" />
+					<include name="createVendor" />
+					<include name="addContactsToVendor" />
+					<include name="addJournalToVendor" />
+					<include name="addFinancialsToVendor" />
+					<include name="deleteVendor" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="runCustomerInvoiceOutside">
+		<classes>
+			<class name="com.turbopro.customermenu.CustomerInvoiceOutside" />
+		</classes>
+	</test>
+
+
+	<test name="runCustomerStatements">
+		<classes>
+			<class name="com.turbopro.customermenu.CustomerStatements">
+				<methods>
+					<include name="cusStatements" />
+					<include name="customerStatementWithInvoice" />
+					<include name="customerStatementWithDate" />
+					<include name="customerStatementWithcustomerPO" />
+					<include name="selectInvoicesWithCredit" />
+					<include name="editExclusionDate" />
+					<include name="changeCustomersettings" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="runSalesOrderOutsideJob">
+		<classes>
+			<class name="com.turbopro.customermenu.SalesOrderOutsideJob">
+				<methods>
+					<include name="salesOrder" />
+					<include name="createSalesOrder" />
+					<include name="addLineitems" />
+					<include name="deleteLineItems" />
+					<include name="changeStatus" />
+					<include name="editSalesOrder" />
+					<include name="searchUsingSO" />
+					<include name="searchUsingCustomerName" />
+					<include name="selectDateRange" />
+					<include name="viewPDF" />
+					<include name="viewEmailComposePopup" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="runCreditDebitMemo">
+		<classes>
+			<class name="com.turbopro.customermenu.CreditDebitMemo">
+				<methods>
+					<include name="creditDebitMemo" />
+					<include name="createCreditMemo" />
+					<include name="editCreditMemo" />
+					<include name="viewMemo" />
+					<include name="createDebitMemo" />
+					<include name="editDebitMemo" />
+					<include name="viewPDF" />
+					<include name="emailMemo" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="runSalesOrderTemplate">
+		<classes>
+			<class name="com.turbopro.customermenu.SalesOrderTemplate" />
+		</classes>
+	</test>
+
+
+	<test name="InventoryAdjustments">
+		<classes>
+			<class name="com.turbopro.inventory.InventoryAdjustments">
+				<methods>
+					<include name="inventoryAdjustments" />
+					<include name="sortHeader" />
+					<include name="createNewAdjustment" />
+					<include name="updateAdjustment" />
+					<include name="viewDetails" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="InventoryCategories">
+		<classes>
+			<class name="com.turbopro.inventory.InventoryCategories">
+				<methods>
+					<include name="inventoryCategory" />
+					<include name="addCategory" />
+					<include name="viewCategoryDetails" />
+					<include name="deleteCategory" />
+					<include name="inactivateCategory" />
+					<include name="activateCategory" />
+					<include name="sortHeaders" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="InventoryCount">
+		<classes>
+			<class name="com.turbopro.inventory.InventoryCount">
+				<methods>
+					<include name="inventoryCount" />
+					<include name="selectWarehouse" />
+					<include name="selectSort" />
+					<include name="countUpdate" />
+					<include name="viewPDF" />
+					<include name="viewCSV" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="InventoryTransaction">
+		<classes>
+			<class name="com.turbopro.inventory.InventoryTransaction">
+				<methods>
+					<include name="inventoryTransaction" />
+					<include name="viewTransaction" />
+					<include name="viewTransactionInDifferentWarehouse" />
+					<include name="setDateRange" />
+					<include name="clearTransactions" />
+					<include name="printTransactionDetails" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="InventoryTransfer">
+		<classes>
+			<class name="com.turbopro.inventory.InventoryTransfer">
+				<methods>
+					<include name="inventoryTransfer" />
+					<include name="sortInventory" />
+					<include name="addTransfer" />
+					<include name="searchTransfer" />
+					<include name="editTransfer" />
+					<include name="receiveItems" />
+					<include name="copyTransfer" />
+					<include name="viewPDF" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="InventoryValue">
+		<classes>
+			<class name="com.turbopro.inventory.InventoryValue">
+				<methods>
+					<include name="inventoryValue" />
+					<include name="sortHeaders" />
+					<include name="viewCSV" />
+					<include name="searchItems" />
+					<include name="resetInventory" />
+					<include name="selectWarehouse" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="InventoryWarehouses">
+		<classes>
+			<class name="com.turbopro.inventory.InventoryWarehouses">
+				<methods>
+					<include name="inventoryWarehouse" />
+					<include name="viewwarehousedetails" />
+					<include name="addWarehouse" />
+					<include name="editWarehouseDetails" />
+					<include name="deleteWarehouse" />
+					<include name="inactivateWarehouse" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="OrderPoints">
+		<classes>
+			<class name="com.turbopro.inventory.OrderPoints">
+				<methods>
+					<include name="orderPoints" />
+					<include name="sortHeaders" />
+					<include name="ViewOrderPoints" />
+					<include name="searchItem" />
+					<include name="editOrderPoints" />
+					<include name="printReorderedPoints" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ReceiveInventory">
+		<classes>
+			<class name="com.turbopro.inventory.ReceiveInventory">
+				<methods>
+					<include name="inventoryReceive" />
+					<include name="searchPO" />
+					<include name="resetSearch" />
+					<include name="selectDateRange" />
+					<include name="receiveLineItems" />
+					<include name="ViewReceivedPO" />
+					<include name="receivePartialPOItems" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="runCreditsTab">
+		<classes>
+			<class name="com.turbopro.jobs.CreditTab">
+				<methods>
+					<include name="creditTab" />
+					<include name="changeCreditStatus" />
+					<include name="AddBondAgentDetails" />
+					<include name="selectFinalWaiver" />
+					<include name="addNotes" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="runCustomerInvoicesInsideJob">
+		<classes>
+			<class name="com.turbopro.jobs.CustomerInvoiceInsideJob">
+				<methods>
+					<include name="login" />
+					<include name="createJob" />
+					<include name="dropship" />
+					<include name="CIforDropship" />
+
+					<include name="stockorder" />
+					<include name="CIforStockorder" />
+
+					<!-- include name="billonly"/ -->
+					<!-- include name="CIforBillonly"/ -->
+
+					<include name="service" />
+					<include name="CIforService" />
+
+					<include name="dropshipMultipleLineitems" />
+					<include name="CIforDropship1" />
+
+					<include name="dropshipImportXml" />
+					<include name="CIforDropship2" />
+
+					<include name="partialCIForSO" />
+
+					<include name="dropship1" />
+					<include name="CIforDropship3" />
+					<include name="viewPdfAfterCheckingDoNotEmail" />
+
+					<include name="dropship2" />
+					<include name="CIforDropship4" />
+					<include name="updateCI" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="runFinancialsTab">
+		<classes>
+			<class name="com.turbopro.jobs.FinancialsTab">
+				<methods>
+					<include name="financialTab" />
+					<include name="viewFinancialReport" />
+					<include name="addInvoice" />
+					<include name="viewInvoice" />
+					<include name="viewOutstandingInvoiceStatement" />
+					<include name="viewInvoiceSummary" />
+					<include name="editIncludeTax" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="runJobMainTab">
+		<classes>
+			<class name="com.turbopro.jobs.JobMainTab">
+				<methods>
+					<include name="navigateReleaseInNewJob" />
+					<include name="updateCustomerName" />
+					<include name="updateJobLocation" />
+					<include name="updateEmployeesAssigned" />
+					<include name="addNewArchitect" />
+					<include name="addNewEngineer" />
+					<include name="changeTaxTerritory" />
+					<include name="addSplitCommission" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="runJobQuotesTab">
+		<classes>
+			<class name="com.turbopro.jobs.JobQuotes">
+				<methods>
+					<include name="navigateQuotesInNewJob" />
+					<include name="createBidder" />
+					<include name="editBidder" />
+					<include name="deleteBidder" />
+					<include name="createQuote" />
+					<include name="editQuote" />
+					<include name="copyQuote" />
+					<include name="deleteQuote" />
+					<include name="updateAmount" />
+					<include name="sendQuotes" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="runJobJournalTab">
+		<classes>
+			<class name="com.turbopro.jobs.JournalTab">
+				<methods>
+					<include name="journalTab" />
+					<include name="addJournalEntry" />
+					<include name="editJournalEntry" />
+					<include name="deleteJournalEntry" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="runSubmittalTab">
+		<classes>
+			<class name="com.turbopro.jobs.SubmittalTab">
+				<methods>
+					<include name="financialTab" />
+					<include name="addSubmittalDetails" />
+					<include name="addOMManualDetails" />
+					<include name="editQuantity" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="runVendorInvoiceInsideJob">
+		<classes>
+			<class name="com.turbopro.jobs.VendorInvoiceInsideJob">
+				<methods>
+					<include name="login" />
+					<include name="createJob" />
+					<include name="dropship" />
+					<include name="VIforDropship" />
+
+					<include name="dropship1" />
+					<include name="changeVendorName" />
+
+					<include name="partialVendorInvoice" />
+
+					<include name="dropship" />
+					<include name="updateLineItems" />
+
+					<include name="VIforImportedDropship" />
+
+					<include name="updateVI" />
+
+					<include name="addFreightToVI" />
+
+					<include name="VIforCommissionOrder" />
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="runMenu">
+		<classes>
+			<class name="com.turbopro.menu.Menu">
+				<methods>
+					<include name="login" />
+					<include name="viewSubmenus" />
+					<include name="selectSubmenus" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="runMenuChangePassword">
+		<classes>
+			<class name="com.turbopro.menu.MenuChangePassword">
+				<methods>
+					<include name="login" />
+					<include name="viewcChangePassword" />
+					<include name="performChangePassword" />
+					<include name="loginAfterChangePassword" />
+					<include name="performChangePasswordagain" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="runMenuMyProfile">
+		<classes>
+			<class name="com.turbopro.menu.MenuMyProfile">
+				<methods>
+					<include name="login" />
+					<include name="viewMyProfile" />
+					<include name="updateWarehouse" />
+					<include name="updateDivision" />
+					<include name="updatewarehouseanddivision" />
+					<include name="cancelUserSettings" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="runProjectsAccountsReceivable">
+		<classes>
+			<class name="com.turbopro.projectsmenu.ProjectsAccountsReceivable">
+				<methods>
+					<include name="login" />
+					<include name="navigateProjects" />
+					<include name="viewAccountsReceivable" />
+					<include name="downloadCsvForAR" />
+					<include name="viewPdfOfAR" />
+					<include name="applySortInARHeaders" />
+					<include name="viewARbyDate" />
+				</methods>
+
+			</class>
+		</classes>
+	</test>
+
+	<test name="runProjectsCommissionStatements">
+		<classes>
+			<class name="com.turbopro.projectsmenu.ProjectsCommissionStatements">
+				<methods>
+					<include name="login" />
+					<include name="navigateProjects" />
+					<include name="accessCommStateWithoutSalesRep" />
+					<include name="accessCommStateWithSalesRep" />
+					<include name="viewPdfOfCommStatment" />
+					<include name="downloadCsvOfCommStatment" />
+					<include name="sortCommStatmentHeaders" />
+					<include name="viewCommStatmentByDateRange" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="runProjectsCustomerList">
+		<classes>
+			<class name="com.turbopro.projectsmenu.ProjectsCustomerList">
+				<methods>
+					<include name="login" />
+					<include name="navigateProjects" />
+					<include name="viewCustomerList" />
+					<include name="viewContactsInCustomerList" />
+					<include name="downloadCsvForCustomerList" />
+					<include name="viewCustomerListForSpecificSalesrep" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="runProjectsOpenJobs">
+		<classes>
+			<class name="com.turbopro.projectsmenu.ProjectsOpenJobs">
+				<methods>
+					<include name="login" />
+					<include name="navigateProjects" />
+					<include name="openJobsInProjects" />
+					<include name="sortingInOpenJobs" />
+					<include name="viewOpenJobsByDateRange" />
+					<include name="viewOpenJobsForSpecCustomer" />
+					<include name="navigatePagesInOpenJobs" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="runProjectsOpenPOandSO">
+		<classes>
+			<class name="com.turbopro.projectsmenu.ProjectsOpenPOandSO">
+				<methods>
+					<include name="login" />
+					<include name="navigateProjects" />
+					<include name="openPoSoInProjects" />
+					<include name="sortingInOpenPoSo" />
+					<include name="viewOpenPoSoByDateRange" />
+					<include name="viewOpenPoSoForSpecCustomer" />
+					<include name="navigatePagesInOpenPoSo" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="runReportsOpenJobs">
+		<classes>
+			<class name="com.turbopro.reports.ReportsOpenJobs">
+				<methods>
+					<include name="login" />
+					<include name="navigateReportOpenJobs" />
+					<include name="viewPreviewReports" />
+					<include name="closeReports" />
+					<include name="viewPrintReports" />
+					<include name="viewPreviewReportsForCusAndSalesRep" />
+					<include name="viewPrintReportsForCusAndSalesRep" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="runReportsOpenPO">
+		<classes>
+			<class name="com.turbopro.reports.ReportsOpenPO">
+				<methods>
+					<include name="login" />
+					<include name="viewOpenPO" />
+					<include name="closeReports" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="runReportsPositivePay">
+		<classes>
+			<class name="com.turbopro.reports.ReportsPositivePay">
+				<methods>
+					<include name="login" />
+					<include name="openPositivePay" />
+					<include name="selectCheckDate" />
+					<include name="submitPositivePay" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="runAwardedContractors">
+		<classes>
+			<class name="com.turbopro.salesmenu.SalesAwardedContractors">
+				<methods>
+					<include name="login" />
+					<include name="viewAwardedContractors" />
+					<include name="sortAwardedContractors" />
+					<include name="awardedContractorColumns" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="runSalesBidList">
+		<classes>
+			<class name="com.turbopro.salesmenu.SalesBidList">
+				<methods>
+					<include name="login" />
+					<include name="viewBidList" />
+					<include name="viewPDF" />
+					<include name="closeBidList" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="runSalesFilter">
+		<classes>
+			<class name="com.turbopro.salesmenu.SalesFilter">
+				<methods>
+					<include name="login" />
+					<include name="viewSalesRepEntries" />
+					<include name="selectSalesRepEntry" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="runPendingJobs">
+		<classes>
+			<class name="com.turbopro.salesmenu.SalesPendingJobs">
+				<methods>
+					<include name="login" />
+					<include name="viewPendingJobs" />
+					<include name="sortPendingJobs" />
+					<include name="viewColumnsInPendingJobs" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="runQuotedJobs">
+		<classes>
+			<class name="com.turbopro.salesmenu.SalesQuotedJobs">
+				<methods>
+					<include name="login" />
+					<include name="viewQuotedJobs" />
+					<include name="accessJobsFromQuotedJobs" />
+					<include name="sortQuotedJobs" />
+					<include name="viewColumnsInQuoteJobs" />
+					<include name="quotedJobsPrint" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="runUpcomingBids">
+		<classes>
+			<class name="com.turbopro.salesmenu.SalesUpcomingBids">
+				<methods>
+					<include name="login" />
+					<include name="upcomingBidsOpen" />
+					<include name="viewAddedJobInUpcomingBids" />
+					<include name="viewUpcomingBidsByColumns" />
+					<include name="sortUpcomingBids" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="runVendorInvoicesAndBills">
+		<classes>
+			<class name="com.turbopro.vendors.VendorInvoicesAndBills">
+				<methods>
+					<include name="vendorInvoices" />
+					<include name="sortVendorInvoices" />
+					<include name="createVendorInvoice" />
+					<!-- include name="updateVendorInvoiceNumber" -->
+					<include name="openAndCloseEnterPOPopup" />
+					<include name="searchVendorInvoice" />
+					<include name="resetVendorInvoiceSearch" />
+					<include name="viewVendorInvoiceByDateRange" />
+					<include name="viewAccountsPayable" />
+					<include name="viewAccountsPayableCSV" />
+					<include name="viewAccountsPayableByDateRange" />
+					<include name="editVendorInvoiceAndClose" />
+					<include name="createVendorInvoiceForPurchaseOrder" />
+					<include name="viewNoCustomerInvoice" />
+					<include name="viewNoCustomerInvoiceByDate" />
+					<include name="printNoCustomerInvoice" />
+					<include name="accessInvoiceFromNoCustomerInvoice" />
+					<include name="viewPurchasingSummary" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="runVendorPayBills">
+		<classes>
+			<class name="com.turbopro.vendors.VendorPayBills">
+				<methods>
+					<include name="vendorPayBill" />
+					<include name="vendorGroupAndUngroup" />
+					<include name="viewVenInvByFiltering" />
+					<include name="payVendorBills" />
+					<include name="createVendInvAndPayVendBills" />
+					<include name="payVendBillsForReceivedInventoryVeBill" />
+					<include name="accessBankChecksForVenPayBills" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="runVendorPurchaseOrders">
+		<classes>
+			<class name="com.turbopro.vendors.VendorPurchaseOrders">
+				<methods>
+					<include name="vendorPurchaseOrder" />
+					<include name="sortVendorPO" />
+					<include name="viewVendorPOByDateRange" />
+					<include name="createVendorPO" />
+					<include name="updateVendorPO" />
+					<include name="deleteLineItemsInPO" />
+					<include name="changeStatusInPO" />
+					<include name="searchPO" />
+					<include name="viewPdfOfVendorPO" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+</suite>
+
+
+
+

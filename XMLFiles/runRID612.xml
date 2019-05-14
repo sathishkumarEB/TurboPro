@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<!-- Suite -->
+<listeners>
+<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+</listeners>
+
+<test name="TestRID612">
+<classes>
+<class name="com.turbopro.requirements.RID612">
+<methods>
+<include name="login"/>
+<include name="jobSettings"/>
+<include name="settingFontSizeStyleToNo"/>
+<include name="createJob"/>
+
+<include name="editorInQuotes"/>
+<include name="settingFontSizeStyleToYes"/>
+
+<include name="quotesInRecentJob"/>
+
+</methods>
+
+
+</class>
+</classes>
+</test>
+</suite>
+

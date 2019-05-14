@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<!-- Suite -->
+<listeners>
+<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+</listeners>
+
+<test name="runAccountingCycles">
+<classes>
+<class name="com.turbopro.company.AccountingCycles">
+<methods>
+<include name="accountingCycles"/>
+<include name="fiscalYearCreateAndRespondPopup"/>
+<include name="closeFiscalYearAndRespondPopup"/>
+<include name="closeCurrentPeriod"/>
+<include name="updateDescInAccountCycles"/>
+</methods>
+</class>
+</classes>
+</test>
+
+
+<test name="runChartOfAccounts">
+<classes>
+<class name="com.turbopro.company.ChartOfAccounts">
+<methods>
+<include name="chartOfAccounts"/>
+<include name="viewChartOfAccounts"/>
+<include name="viewAdditionalAccounts"/>
+<include name="addAccount"/>
+<include name="deleteAccount"/>
+<include name="searchSpecificAccount"/>
+<include name="updateDescInAccountCycles"/>
+</methods>
+</class>
+</classes>
+</test>
+
+
+<test name="runCustomers">
+<classes>
+<class name="com.turbopro.company.Customers">
+<methods>
+<include name="navigateToCustomers"/>
+<include name="viewDetails"/>
+<include name="addCustomer"/>
+<include name="addContacts"/>
+<include name="editContacts"/>
+<include name="addAddressDetails"/>
+<include name="addJournalEntry"/>
+<include name="addDiscountTerms"/>
+<include name="searchCustomer"/>
+<include name="resetCustomerTable"/>
+<include name="deleteCustomer"/>
+</methods>
+</class>
+</classes>
+</test>
+
+
+<test name="runDivisions">
+<classes>
+<class name="com.turbopro.company.Divisions">
+<methods>
+<include name="divisions"/>
+<include name="viewExistingDivisions"/>
+<include name="createDivision"/>
+<include name="inactiveDivision"/>
+<include name="activeDivision"/>
+<include name="deleteDivision"/>
+</methods>
+</class>
+</classes>
+</test>
+
+
+<test name="runEmployeeCommission">
+<classes>
+<class name="com.turbopro.company.EmployeeCommission">
+<methods>
+<include name="employeeCommission"/>
+<include name="viewCommissionForDiffPeriod"/>
+<include name="printCommissionList"/>
+<include name="openAndCloseNewPeriod"/>
+<include name="cancelRecalculate"/>
+<include name="cancelReversePeriod"/>
+</methods>
+</class>
+</classes>
+</test>
+
+<test name="runEmployees">
+<classes>
+<class name="com.turbopro.company.Employees">
+<methods>
+<include name="navigateToEmployees"/>
+<include name="viewEmployee"/>
+<include name="addEmployee"/>
+<include name="addContact"/>
+<include name="editContact"/>
+<include name="deleteContact"/>
+<include name="selectCategories"/>
+<include name="provideEmployeeDetails"/>
+<include name="deleteEmployeeDetails"/>
+<include name="viewActiveEmployees"/>
+<include name="viewInactiveEmployees"/>
+</methods>
+</class>
+</classes>
+</test>
+
+
+<test name="runGeneralLedger">
+<classes>
+<class name="com.turbopro.company.GeneralLedger">
+<methods>
+<include name="generalLedger"/>
+<include name="viewAccountsByPeriodAndYear"/>
+<include name="viewAccountsByMostRecentPeriod"/>
+<include name="viewAccountsByFiscalYearToDate"/>
+<include name="exportCSV"/>
+<include name="drillIntoAccountDetails"/>
+</methods>
+</class>
+</classes>
+</test>
+
+
+<test name="runGeneralLedgerBalanceTrialAndIncome">
+<classes>
+<class name="com.turbopro.company.GeneralLedgerBalanceTrialAndIncome">
+<methods>
+<include name="balanceSheet"/>
+<include name="viewBalanceSheetWithoutAccNumber"/>
+<include name="viewBalanceSheetWithAccNumber"/>
+<include name="trialBalance"/>
+<include name="viewTrialBalanceWithCurrentPeriodPrint"/>
+<include name="viewTrialBalanceWithoutCurrentPeriodPrint"/>
+<include name="incomeStatement"/>
+<include name="viewIncomeStatementWithAccNumber"/>
+<include name="viewIncomeStatementWithDivision"/>
+<include name="downloadCsvOfIncomeStatement"/>
+</methods>
+</class>
+</classes>
+</test>
+
+
+<test name="runRolodex">
+<classes>
+<class name="com.turbopro.company.Rolodex">
+<methods>
+<include name="navigateToRolodex"/>
+<include name="selectCategory"/>
+<include name="viewRolodex"/>
+<include name="addRolodex"/>
+<include name="addContact"/>
+<include name="editContact"/>
+<include name="deleteContact"/>
+<include name="addAddress"/>
+<include name="addJournal"/>
+<include name="editJournal"/>
+<include name="deleteRolodex"/>
+</methods>
+</class>
+</classes>
+</test>
+
+
+<test name="runSettings">
+<classes>
+<class name="com.turbopro.company.Settings">
+<methods>
+<include name="settings"/>
+<include name="uploadCompanyLogo"/>
+<include name="exportCompanyContacts"/>
+<include name="updateGroupDefaults"/>
+<include name="viewCustomerType"/>
+<include name="addCustomerType"/>
+<include name="deleteCustomerType"/>
+<include name="viewCustomerPaymentTerms"/>
+<include name="createCustomerPaymentTerms"/>
+<include name="deleteCustomerPaymentTerms"/>
+<include name="viewShipVia"/>
+<include name="addShipVia"/>
+<include name="deleteShipVia"/>
+<include name="viewFreightCharges"/>
+<include name="addFreightCharges"/>
+<include name="deleteFreightCharges"/>
+<include name="addSplitTypesInEmpSettings"/>
+<include name="deleteSplitTypesInEmpSettings"/>
+<include name="viewBidStatus"/>
+<include name="addBidStatus"/>
+<include name="deleteBidStatus"/>
+<include name="addQuotesCategory"/>
+<include name="deleteQuotesCategory"/>
+<include name="createDepartments"/>
+<include name="inactiveDepartment"/>
+<include name="deleteDepartments"/>
+</methods>
+</class>
+</classes>
+</test>
+
+
+<test name="runTaxTerritories">
+<classes>
+<class name="com.turbopro.company.TaxTerritories">
+<methods>
+<include name="taxTerritory"/>
+<include name="viewTaxTerritoryDetails"/>
+<include name="addAndCancelTaxTerritory"/>
+<include name="createTaxTerritory"/>
+<include name="deleteTaxTerritory"/>
+<include name="updateTaxTerritoryDetails"/>
+<include name="inactiveTaxTerritory"/>
+<include name="activeTaxTerritory"/>
+</methods>
+</class>
+</classes>
+</test>
+
+
+<test name="runUsers">
+<classes>
+<class name="com.turbopro.company.Users">
+<methods>
+<include name="navigateToUsers"/>
+<include name="viewUserDetails"/>
+<include name="editUserDetails"/>
+<include name="createNewUser"/>
+<include name="searchUser"/>
+<include name="viewActiveUsers"/>
+<include name="viewInactiveUsers"/>
+</methods>
+</class>
+</classes>
+</test>
+
+
+<test name="runVendors">
+<classes>
+<class name="com.turbopro.company.Vendors">
+<methods>
+<include name="vendors"/>
+<include name="searchVendor"/>
+<include name="openExistingVendor"/>
+<include name="createVendor"/>
+<include name="addContactsToVendor"/>
+<include name="addJournalToVendor"/>
+<include name="addFinancialsToVendor"/>
+<include name="deleteVendor"/>
+</methods>
+</class>
+</classes>
+</test>
+
+
+
+
+</suite>
+
+
+
+

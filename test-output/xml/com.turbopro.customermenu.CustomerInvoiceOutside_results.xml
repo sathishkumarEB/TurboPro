@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runCustomerInvoiceOutside"
+           tests="14"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="180.836">
+  <properties />
+  
+  
+            <testcase name="deleteLineItemsToExistingCusInvoice" time="0.047" classname="com.turbopro.customermenu.CustomerInvoiceOutside" />
+                <testcase name="addLineItemsToExistingInvoice" time="0.160" classname="com.turbopro.customermenu.CustomerInvoiceOutside" />
+                <testcase name="updateProOfCI" time="0.049" classname="com.turbopro.customermenu.CustomerInvoiceOutside" />
+                <testcase name="searchCusInvByJobName" time="0.052" classname="com.turbopro.customermenu.CustomerInvoiceOutside" />
+                <testcase name="cusInvForSalOrdPopup" time="0.136" classname="com.turbopro.customermenu.CustomerInvoiceOutside" />
+                <testcase name="sortCusInvoice" time="0.188" classname="com.turbopro.customermenu.CustomerInvoiceOutside" />
+                <testcase name="createCustomerInvoice" time="150.611" classname="com.turbopro.customermenu.CustomerInvoiceOutside" />
+                <testcase name="searchCusInvoice" time="0.059" classname="com.turbopro.customermenu.CustomerInvoiceOutside" />
+                <testcase name="viewCusInvPdf" time="9.427" classname="com.turbopro.customermenu.CustomerInvoiceOutside" />
+                <testcase name="customerInvoices" time="12.509" classname="com.turbopro.customermenu.CustomerInvoiceOutside" />
+                <testcase name="removeSalesrepInCustomerInvoice" time="0.098" classname="com.turbopro.customermenu.CustomerInvoiceOutside" />
+                <testcase name="emailCustomerInv" time="7.301" classname="com.turbopro.customermenu.CustomerInvoiceOutside" />
+                <testcase name="viewCusInvoiceByDateRange" time="0.076" classname="com.turbopro.customermenu.CustomerInvoiceOutside" />
+                <testcase name="editCusInvoiceAfterPayment" time="0.123" classname="com.turbopro.customermenu.CustomerInvoiceOutside" />
+      
+</testsuite>

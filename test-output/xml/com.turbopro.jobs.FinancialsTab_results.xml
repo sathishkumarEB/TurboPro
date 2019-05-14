@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runFinancialsTab"
+           tests="7"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="251.923">
+  <properties />
+  
+  
+            <testcase name="viewInvoice" time="5.934" classname="com.turbopro.jobs.FinancialsTab" />
+                <testcase name="financialTab" time="58.094" classname="com.turbopro.jobs.FinancialsTab" />
+                <testcase name="addInvoice" time="101.459" classname="com.turbopro.jobs.FinancialsTab" />
+                <testcase name="viewFinancialReport" time="38.941" classname="com.turbopro.jobs.FinancialsTab" />
+                <testcase name="viewInvoiceSummary" time="23.484" classname="com.turbopro.jobs.FinancialsTab" />
+                <testcase name="viewOutstandingInvoiceStatement" time="23.797" classname="com.turbopro.jobs.FinancialsTab" />
+                <testcase name="editIncludeTax" time="0.214" classname="com.turbopro.jobs.FinancialsTab" />
+      
+</testsuite>

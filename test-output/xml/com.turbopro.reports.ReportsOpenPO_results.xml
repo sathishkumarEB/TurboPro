@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runReportsOpenPO"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="23.854">
+  <properties />
+  
+  
+            <testcase name="viewOpenPO" time="3.128" classname="com.turbopro.reports.ReportsOpenPO" />
+                <testcase name="login" time="20.726" classname="com.turbopro.reports.ReportsOpenPO" />
+      
+</testsuite>

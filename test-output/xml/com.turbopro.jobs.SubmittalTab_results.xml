@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runSubmittalTab"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="63.359">
+  <properties />
+  
+  
+            <testcase name="financialTab" time="42.992" classname="com.turbopro.jobs.SubmittalTab" />
+                <testcase name="addSubmittalDetails" time="14.609" classname="com.turbopro.jobs.SubmittalTab" />
+                <testcase name="addOMManualDetails" time="5.431" classname="com.turbopro.jobs.SubmittalTab" />
+                <testcase name="editQuantity" time="0.327" classname="com.turbopro.jobs.SubmittalTab" />
+      
+</testsuite>

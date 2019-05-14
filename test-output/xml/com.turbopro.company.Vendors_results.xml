@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runVendors"
+           tests="8"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="38.090">
+  <properties />
+  
+  
+            <testcase name="vendors" time="10.970" classname="com.turbopro.company.Vendors" />
+                <testcase name="createVendor" time="3.566" classname="com.turbopro.company.Vendors" />
+                <testcase name="addFinancialsToVendor" time="3.023" classname="com.turbopro.company.Vendors" />
+                <testcase name="openExistingVendor" time="5.499" classname="com.turbopro.company.Vendors" />
+                <testcase name="deleteVendor" time="3.853" classname="com.turbopro.company.Vendors" />
+                <testcase name="searchVendor" time="5.956" classname="com.turbopro.company.Vendors" />
+                <testcase name="addJournalToVendor" time="3.860" classname="com.turbopro.company.Vendors" />
+                <testcase name="addContactsToVendor" time="1.363" classname="com.turbopro.company.Vendors" />
+      
+</testsuite>

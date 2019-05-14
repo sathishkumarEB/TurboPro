@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<!-- Suite -->
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="SalesUpcomingBids">
+		<classes>
+			<class name="com.turbopro.salesmenu.SalesUpcomingBids">
+				<methods>
+					<include name="login" />
+					<include name="upcomingBidsOpen" />
+					<include name="viewAddedJobInUpcomingBids" />
+					<include name="viewUpcomingBidsByColumns" />
+					<include name="sortUpcomingBids" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

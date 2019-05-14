@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<!-- Suite -->
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="ReportsOpenJobs">
+		<classes>
+			<class name="com.turbopro.reports.ReportsOpenJobs">
+				<methods>
+					<include name="login" />
+					<include name="navigateReportOpenJobs" />
+					<include name="viewPreviewReports" />
+					<include name="closeReports" />
+					<include name="viewPrintReports" />
+					<include name="viewPreviewReportsForCusAndSalesRep" />
+					<include name="viewPrintReportsForCusAndSalesRep" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

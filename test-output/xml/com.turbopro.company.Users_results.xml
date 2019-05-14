@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runUsers"
+           tests="6"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="21.044">
+  <properties />
+  
+  
+            <testcase name="viewUserDetails" time="4.113" classname="com.turbopro.company.Users" />
+                <testcase name="searchUser" time="1.882" classname="com.turbopro.company.Users" />
+                <testcase name="editUserDetails" time="0.428" classname="com.turbopro.company.Users" />
+                <testcase name="viewInactiveUsers" time="0.403" classname="com.turbopro.company.Users" />
+                <testcase name="navigateToUsers" time="13.335" classname="com.turbopro.company.Users" />
+                <testcase name="viewActiveUsers" time="0.883" classname="com.turbopro.company.Users" />
+      
+</testsuite>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="InventoryCount"
+           tests="6"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="99.450">
+  <properties />
+  
+  
+            <testcase name="selectWarehouse" time="9.474" classname="com.turbopro.inventory.InventoryCount" />
+                <testcase name="countUpdate" time="5.519" classname="com.turbopro.inventory.InventoryCount" />
+                <testcase name="viewPDF" time="24.313" classname="com.turbopro.inventory.InventoryCount" />
+                <testcase name="selectSort" time="41.315" classname="com.turbopro.inventory.InventoryCount" />
+                <testcase name="viewCSV" time="4.213" classname="com.turbopro.inventory.InventoryCount" />
+                <testcase name="inventoryCount" time="14.616" classname="com.turbopro.inventory.InventoryCount" />
+      
+</testsuite>

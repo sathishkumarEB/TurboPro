@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runCustomers"
+           tests="10"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="66.988">
+  <properties />
+  
+  
+            <testcase name="resetCustomerTable" time="3.664" classname="com.turbopro.company.Customers" />
+                <testcase name="addDiscountTerms" time="11.865" classname="com.turbopro.company.Customers" />
+                <testcase name="addCustomer" time="2.712" classname="com.turbopro.company.Customers" />
+                <testcase name="searchCustomer" time="7.920" classname="com.turbopro.company.Customers" />
+                <testcase name="navigateToCustomers" time="18.190" classname="com.turbopro.company.Customers" />
+                <testcase name="addContacts" time="2.445" classname="com.turbopro.company.Customers" />
+                <testcase name="addJournalEntry" time="3.819" classname="com.turbopro.company.Customers" />
+                <testcase name="viewDetails" time="3.881" classname="com.turbopro.company.Customers" />
+                <testcase name="deleteCustomer" time="10.830" classname="com.turbopro.company.Customers" />
+                <testcase name="addAddressDetails" time="1.662" classname="com.turbopro.company.Customers" />
+      
+</testsuite>

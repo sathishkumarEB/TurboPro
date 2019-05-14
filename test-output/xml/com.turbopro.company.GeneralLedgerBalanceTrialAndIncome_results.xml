@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runGeneralLedgerBalanceTrialAndIncome"
+           tests="10"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="169.483">
+  <properties />
+  
+  
+            <testcase name="viewTrialBalanceWithoutCurrentPeriodPrint" time="29.853" classname="com.turbopro.company.GeneralLedgerBalanceTrialAndIncome" />
+                <testcase name="incomeStatement" time="0.732" classname="com.turbopro.company.GeneralLedgerBalanceTrialAndIncome" />
+                <testcase name="balanceSheet" time="13.056" classname="com.turbopro.company.GeneralLedgerBalanceTrialAndIncome" />
+                <testcase name="trialBalance" time="1.042" classname="com.turbopro.company.GeneralLedgerBalanceTrialAndIncome" />
+                <testcase name="viewIncomeStatementWithDivision" time="24.261" classname="com.turbopro.company.GeneralLedgerBalanceTrialAndIncome" />
+                <testcase name="viewIncomeStatementWithAccNumber" time="23.373" classname="com.turbopro.company.GeneralLedgerBalanceTrialAndIncome" />
+                <testcase name="viewTrialBalanceWithCurrentPeriodPrint" time="30.143" classname="com.turbopro.company.GeneralLedgerBalanceTrialAndIncome" />
+                <testcase name="downloadCsvOfIncomeStatement" time="0.202" classname="com.turbopro.company.GeneralLedgerBalanceTrialAndIncome" />
+                <testcase name="viewBalanceSheetWithAccNumber" time="23.441" classname="com.turbopro.company.GeneralLedgerBalanceTrialAndIncome" />
+                <testcase name="viewBalanceSheetWithoutAccNumber" time="23.380" classname="com.turbopro.company.GeneralLedgerBalanceTrialAndIncome" />
+      
+</testsuite>

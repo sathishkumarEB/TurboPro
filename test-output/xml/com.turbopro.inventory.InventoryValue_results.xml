@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="InventoryValue"
+           tests="6"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="24.870">
+  <properties />
+  
+  
+            <testcase name="searchItems" time="1.107" classname="com.turbopro.inventory.InventoryValue" />
+                <testcase name="selectWarehouse" time="6.397" classname="com.turbopro.inventory.InventoryValue" />
+                <testcase name="inventoryValue" time="13.351" classname="com.turbopro.inventory.InventoryValue" />
+                <testcase name="viewCSV" time="3.343" classname="com.turbopro.inventory.InventoryValue" />
+                <testcase name="sortHeaders" time="0.384" classname="com.turbopro.inventory.InventoryValue" />
+                <testcase name="resetInventory" time="0.288" classname="com.turbopro.inventory.InventoryValue" />
+      
+</testsuite>

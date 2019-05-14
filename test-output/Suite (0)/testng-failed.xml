@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite (0)]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="runAccountingCycles(failed)">
+    <classes>
+      <class name="com.turbopro.company.AccountingCycles">
+        <methods>
+          <include name="accountingCycles"/>
+          <include name="teardown"/>
+          <include name="closeFiscalYearAndRespondPopup"/>
+          <include name="beforeTest"/>
+          <include name="closeCurrentPeriod"/>
+          <include name="fiscalYearCreateAndRespondPopup"/>
+        </methods>
+      </class> <!-- com.turbopro.company.AccountingCycles -->
+    </classes>
+  </test> <!-- runAccountingCycles(failed) -->
+</suite> <!-- Failed suite [Suite (0)] -->

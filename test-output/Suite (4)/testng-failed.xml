@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite (4)]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="runProjectsCommissionStatements(failed)">
+    <classes>
+      <class name="com.turbopro.projectsmenu.ProjectsCommissionStatements">
+        <methods>
+          <include name="sortCommStatmentHeaders"/>
+          <include name="projects"/>
+          <include name="accessCommStateWithoutSalesRep"/>
+          <include name="viewCommStatmentByDateRange"/>
+          <include name="viewPdfOfCommStatment"/>
+          <include name="downloadCsvOfCommStatment"/>
+          <include name="teardown"/>
+          <include name="accessCommStateWithSalesRep"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.turbopro.projectsmenu.ProjectsCommissionStatements -->
+    </classes>
+  </test> <!-- runProjectsCommissionStatements(failed) -->
+  <test thread-count="5" name="runProjectsCustomerList(failed)">
+    <classes>
+      <class name="com.turbopro.projectsmenu.ProjectsCustomerList">
+        <methods>
+          <include name="projects"/>
+          <include name="viewCustomerList"/>
+          <include name="viewCustomerListForSpecificSalesrep"/>
+          <include name="downloadCsvForCustomerList"/>
+          <include name="viewCustomerListForAllSalesrep"/>
+          <include name="viewContactsInCustomerList"/>
+          <include name="teardown"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.turbopro.projectsmenu.ProjectsCustomerList -->
+    </classes>
+  </test> <!-- runProjectsCustomerList(failed) -->
+  <test thread-count="5" name="runProjectsOpenJobs(failed)">
+    <classes>
+      <class name="com.turbopro.projectsmenu.ProjectsOpenJobs">
+        <methods>
+          <include name="sortingInOpenJobs"/>
+          <include name="viewOpenJobsByDateRange"/>
+          <include name="beforeTest"/>
+          <include name="teardown"/>
+          <include name="navigatePagesInOpenJobs"/>
+          <include name="projects"/>
+          <include name="viewOpenJobsForSpecCustomer"/>
+          <include name="openJobsInProjects"/>
+        </methods>
+      </class> <!-- com.turbopro.projectsmenu.ProjectsOpenJobs -->
+    </classes>
+  </test> <!-- runProjectsOpenJobs(failed) -->
+  <test thread-count="5" name="runProjectsOpenPOandSO(failed)">
+    <classes>
+      <class name="com.turbopro.projectsmenu.ProjectsOpenPOandSO">
+        <methods>
+          <include name="viewOpenPoSoByDateRange"/>
+          <include name="navigatePagesInOpenPoSo"/>
+          <include name="openPoSoInProjects"/>
+          <include name="beforeTest"/>
+          <include name="teardown"/>
+          <include name="sortingInOpenPoSo"/>
+          <include name="projects"/>
+        </methods>
+      </class> <!-- com.turbopro.projectsmenu.ProjectsOpenPOandSO -->
+    </classes>
+  </test> <!-- runProjectsOpenPOandSO(failed) -->
+</suite> <!-- Failed suite [Suite (4)] -->

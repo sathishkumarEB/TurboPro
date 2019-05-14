@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite (3)]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="runMenu(failed)">
+    <classes>
+      <class name="com.turbopro.menu.Menu">
+        <methods>
+          <include name="viewSubmenus"/>
+          <include name="beforeTest"/>
+          <include name="selectSubmenus"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.turbopro.menu.Menu -->
+    </classes>
+  </test> <!-- runMenu(failed) -->
+  <test thread-count="5" name="runMenuChangePassword(failed)">
+    <classes>
+      <class name="com.turbopro.menu.MenuChangePassword">
+        <methods>
+          <include name="performChangePasswordagain"/>
+          <include name="performChangePassword"/>
+          <include name="viewcChangePassword"/>
+          <include name="loginAfterChangePassword"/>
+          <include name="teardown"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.turbopro.menu.MenuChangePassword -->
+    </classes>
+  </test> <!-- runMenuChangePassword(failed) -->
+  <test thread-count="5" name="runMenuMyProfile(failed)">
+    <classes>
+      <class name="com.turbopro.menu.MenuMyProfile">
+        <methods>
+          <include name="updatewarehouseanddivision"/>
+          <include name="beforeTest"/>
+          <include name="teardown"/>
+          <include name="updateDivision"/>
+          <include name="viewMyProfile"/>
+          <include name="updateWarehouse"/>
+          <include name="cancelUserSettings"/>
+        </methods>
+      </class> <!-- com.turbopro.menu.MenuMyProfile -->
+    </classes>
+  </test> <!-- runMenuMyProfile(failed) -->
+</suite> <!-- Failed suite [Suite (3)] -->

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runProjectsAccountsReceivable"
+           tests="5"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="62.471">
+  <properties />
+  
+  
+            <testcase name="viewAccountsReceivable" time="3.727" classname="com.turbopro.projectsmenu.ProjectsAccountsReceivable" />
+                <testcase name="viewARbyDate" time="7.564" classname="com.turbopro.projectsmenu.ProjectsAccountsReceivable" />
+                <testcase name="applySortInARHeaders" time="29.439" classname="com.turbopro.projectsmenu.ProjectsAccountsReceivable" />
+                <testcase name="downloadCsvForAR" time="3.900" classname="com.turbopro.projectsmenu.ProjectsAccountsReceivable" />
+                <testcase name="projects" time="17.841" classname="com.turbopro.projectsmenu.ProjectsAccountsReceivable" />
+      
+</testsuite>

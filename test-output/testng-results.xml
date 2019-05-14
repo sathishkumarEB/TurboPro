@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="17" passed="16">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="168431" started-at="2019-05-13T11:39:45Z" finished-at="2019-05-13T11:42:33Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="168431" started-at="2019-05-13T11:39:45Z" finished-at="2019-05-13T11:42:33Z">
+      <class name="com.turbopro.jobs.JobMainTab">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.turbopro.jobs.JobMainTab@c46bcd4]" name="beforeTest" is-config="true" duration-ms="13767" started-at="2019-05-13T11:39:45Z" finished-at="2019-05-13T11:39:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="navigateReleaseInNewJob()[pri:1, instance:com.turbopro.jobs.JobMainTab@c46bcd4]" name="navigateReleaseInNewJob" duration-ms="23290" started-at="2019-05-13T11:39:58Z" finished-at="2019-05-13T11:40:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateReleaseInNewJob -->
+        <test-method status="PASS" signature="updateCustomerName()[pri:2, instance:com.turbopro.jobs.JobMainTab@c46bcd4]" name="updateCustomerName" duration-ms="42258" started-at="2019-05-13T11:40:22Z" finished-at="2019-05-13T11:41:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateCustomerName -->
+        <test-method status="PASS" signature="updateJobLocation()[pri:3, instance:com.turbopro.jobs.JobMainTab@c46bcd4]" name="updateJobLocation" duration-ms="2701" started-at="2019-05-13T11:41:04Z" finished-at="2019-05-13T11:41:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateJobLocation -->
+        <test-method status="PASS" signature="updateEmployeesAssigned()[pri:4, instance:com.turbopro.jobs.JobMainTab@c46bcd4]" name="updateEmployeesAssigned" duration-ms="5021" started-at="2019-05-13T11:41:07Z" finished-at="2019-05-13T11:41:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateEmployeesAssigned -->
+        <test-method status="PASS" signature="addNewArchitect()[pri:5, instance:com.turbopro.jobs.JobMainTab@c46bcd4]" name="addNewArchitect" duration-ms="5394" started-at="2019-05-13T11:41:12Z" finished-at="2019-05-13T11:41:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewArchitect -->
+        <test-method status="PASS" signature="addNewEngineer()[pri:6, instance:com.turbopro.jobs.JobMainTab@c46bcd4]" name="addNewEngineer" duration-ms="6728" started-at="2019-05-13T11:41:17Z" finished-at="2019-05-13T11:41:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewEngineer -->
+        <test-method status="PASS" signature="changeTaxTerritory()[pri:7, instance:com.turbopro.jobs.JobMainTab@c46bcd4]" name="changeTaxTerritory" duration-ms="1966" started-at="2019-05-13T11:41:24Z" finished-at="2019-05-13T11:41:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeTaxTerritory -->
+        <test-method status="PASS" signature="addSplitCommission()[pri:8, instance:com.turbopro.jobs.JobMainTab@c46bcd4]" name="addSplitCommission" duration-ms="3572" started-at="2019-05-13T11:41:26Z" finished-at="2019-05-13T11:41:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addSplitCommission -->
+        <test-method status="PASS" signature="updateStatusType()[pri:9, instance:com.turbopro.jobs.JobMainTab@c46bcd4]" name="updateStatusType" duration-ms="1553" started-at="2019-05-13T11:41:29Z" finished-at="2019-05-13T11:41:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateStatusType -->
+        <test-method status="PASS" signature="updateOriginaBidDate()[pri:10, instance:com.turbopro.jobs.JobMainTab@c46bcd4]" name="updateOriginaBidDate" duration-ms="5999" started-at="2019-05-13T11:41:31Z" finished-at="2019-05-13T11:41:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateOriginaBidDate -->
+        <test-method status="PASS" signature="addGeneralContractor()[pri:11, instance:com.turbopro.jobs.JobMainTab@c46bcd4]" name="addGeneralContractor" duration-ms="6770" started-at="2019-05-13T11:41:37Z" finished-at="2019-05-13T11:41:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addGeneralContractor -->
+        <test-method status="PASS" signature="updateCustomerPO()[pri:12, instance:com.turbopro.jobs.JobMainTab@c46bcd4]" name="updateCustomerPO" duration-ms="5914" started-at="2019-05-13T11:41:44Z" finished-at="2019-05-13T11:41:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateCustomerPO -->
+        <test-method status="PASS" signature="updateOwner()[pri:13, instance:com.turbopro.jobs.JobMainTab@c46bcd4]" name="updateOwner" duration-ms="9661" started-at="2019-05-13T11:41:50Z" finished-at="2019-05-13T11:41:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateOwner -->
+        <test-method status="PASS" signature="updateProjectManager()[pri:14, instance:com.turbopro.jobs.JobMainTab@c46bcd4]" name="updateProjectManager" duration-ms="8961" started-at="2019-05-13T11:41:59Z" finished-at="2019-05-13T11:42:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateProjectManager -->
+        <test-method status="PASS" signature="updatingInstallingContractor()[pri:16, instance:com.turbopro.jobs.JobMainTab@c46bcd4]" name="updatingInstallingContractor" duration-ms="13302" started-at="2019-05-13T11:42:08Z" finished-at="2019-05-13T11:42:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatingInstallingContractor -->
+        <test-method status="PASS" signature="removingInstallingContractor()[pri:17, instance:com.turbopro.jobs.JobMainTab@c46bcd4]" name="removingInstallingContractor" duration-ms="11444" started-at="2019-05-13T11:42:22Z" finished-at="2019-05-13T11:42:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removingInstallingContractor -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.turbopro.jobs.JobMainTab@c46bcd4]" name="teardown" is-config="true" duration-ms="1" started-at="2019-05-13T11:42:33Z" finished-at="2019-05-13T11:42:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.turbopro.jobs.JobMainTab -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

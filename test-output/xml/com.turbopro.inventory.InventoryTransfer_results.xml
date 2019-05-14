@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="InventoryTransfer"
+           tests="8"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="418.657">
+  <properties />
+  
+  
+            <testcase name="editTransfer" time="121.613" classname="com.turbopro.inventory.InventoryTransfer" />
+                <testcase name="searchTransfer" time="0.172" classname="com.turbopro.inventory.InventoryTransfer" />
+                <testcase name="inventoryTransfer" time="12.981" classname="com.turbopro.inventory.InventoryTransfer" />
+                <testcase name="copyTransfer" time="121.729" classname="com.turbopro.inventory.InventoryTransfer" />
+                <testcase name="receiveItems" time="121.695" classname="com.turbopro.inventory.InventoryTransfer" />
+                <testcase name="sortInventory" time="0.375" classname="com.turbopro.inventory.InventoryTransfer" />
+                <testcase name="addTransfer" time="39.977" classname="com.turbopro.inventory.InventoryTransfer" />
+                <testcase name="viewPDF" time="0.115" classname="com.turbopro.inventory.InventoryTransfer" />
+      
+</testsuite>

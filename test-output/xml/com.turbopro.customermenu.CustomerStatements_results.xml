@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runCustomerStatements"
+           tests="7"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="218.711">
+  <properties />
+  
+  
+            <testcase name="customerStatementWithInvoice" time="32.613" classname="com.turbopro.customermenu.CustomerStatements" />
+                <testcase name="customerStatementWithDate" time="32.302" classname="com.turbopro.customermenu.CustomerStatements" />
+                <testcase name="cusStatements" time="14.063" classname="com.turbopro.customermenu.CustomerStatements" />
+                <testcase name="changeCustomersettings" time="40.821" classname="com.turbopro.customermenu.CustomerStatements" />
+                <testcase name="customerStatementWithcustomerPO" time="32.153" classname="com.turbopro.customermenu.CustomerStatements" />
+                <testcase name="selectInvoicesWithCredit" time="32.105" classname="com.turbopro.customermenu.CustomerStatements" />
+                <testcase name="editExclusionDate" time="34.654" classname="com.turbopro.customermenu.CustomerStatements" />
+      
+</testsuite>

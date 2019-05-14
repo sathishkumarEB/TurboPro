@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runBookingProfit"
+           tests="6"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="225.135">
+  <properties />
+  
+  
+            <testcase name="dateRange" time="47.634" classname="com.turbopro.reports.BookingProfit" />
+                <testcase name="yearToDate" time="39.867" classname="com.turbopro.reports.BookingProfit" />
+                <testcase name="monthToDate" time="44.020" classname="com.turbopro.reports.BookingProfit" />
+                <testcase name="monthToDateWithSalesrep" time="61.968" classname="com.turbopro.reports.BookingProfit" />
+                <testcase name="singleDate" time="14.257" classname="com.turbopro.reports.BookingProfit" />
+                <testcase name="login" time="17.389" classname="com.turbopro.reports.BookingProfit" />
+      
+</testsuite>

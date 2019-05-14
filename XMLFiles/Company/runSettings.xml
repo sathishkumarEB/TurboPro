@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<!-- Suite -->
+<listeners>
+<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+</listeners>
+
+<test name="runSettings">
+<classes>
+<class name="com.turbopro.company.Settings">
+
+<methods>
+<include name="settings"/>
+<include name="uploadCompanyLogo"/>
+<include name="exportCompanyContacts"/>
+<include name="updateGroupDefaults"/>
+<include name="viewCustomerType"/>
+<include name="addCustomerType"/>
+<include name="deleteCustomerType"/>
+<include name="viewCustomerPaymentTerms"/>
+<include name="createCustomerPaymentTerms"/>
+<include name="deleteCustomerPaymentTerms"/>
+<include name="viewShipVia"/>
+<include name="addShipVia"/>
+<include name="deleteShipVia"/>
+<include name="viewFreightCharges"/>
+<include name="addFreightCharges"/>
+<include name="deleteFreightCharges"/>
+<include name="addSplitTypesInEmpSettings"/>
+<include name="deleteSplitTypesInEmpSettings"/>
+<include name="viewBidStatus"/>
+<include name="addBidStatus"/>
+<include name="deleteBidStatus"/>
+<include name="addQuotesCategory"/>
+<include name="deleteQuotesCategory"/>
+<include name="createDepartments"/>
+<include name="inactiveDepartment"/>
+<include name="deleteDepartments"/>
+
+</methods>
+
+</class>
+</classes>
+</test>
+</suite>
+

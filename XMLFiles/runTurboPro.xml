@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<!-- Suite -->
+	<suite-files>
+
+		<!-- <suite-file path="C:\Users\sathish_kumar\workspace\TurboPro\XMLFiles\Banking\runBankingFully.xml"/> -->
+		<suite-file
+			path="C:\Users\sathish_kumar\workspace\TurboPro\XMLFiles\Company\runCompanyModuleFully.xml" />
+		<suite-file
+			path="C:\Users\sathish_kumar\workspace\TurboPro\XMLFiles\Customers\runCustomerModuleFully.xml" />
+		<suite-file
+			path="C:\Users\sathish_kumar\workspace\TurboPro\XMLFiles\Inventory\runInventoryFully.xml" />
+		<!-- <suite-file path="C:\Users\sathish_kumar\workspace\TurboPro\XMLFiles\Jobs\runJobModuleFully.xml"/> -->
+		<suite-file
+			path="C:\Users\sathish_kumar\workspace\TurboPro\XMLFiles\Menu\runMenuFully.xml" />
+		<suite-file
+			path="C:\Users\sathish_kumar\workspace\TurboPro\XMLFiles\Project\runProjectsModuleFully.xml" />
+		<suite-file
+			path="C:\Users\sathish_kumar\workspace\TurboPro\XMLFiles\Reports\runReportsFully.xml" />
+		<suite-file
+			path="C:\Users\sathish_kumar\workspace\TurboPro\XMLFiles\Sales\runSalesFully.xml" />
+		<suite-file
+			path="C:\Users\sathish_kumar\workspace\TurboPro\XMLFiles\Vendors\runVendorModuleFully.xml" />
+	</suite-files>
+
+</suite>
+
+
+
+

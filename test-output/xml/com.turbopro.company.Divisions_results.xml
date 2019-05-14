@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runDivisions"
+           tests="6"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="23.479">
+  <properties />
+  
+  
+            <testcase name="activeDivision" time="0.191" classname="com.turbopro.company.Divisions" />
+                <testcase name="viewExistingDivisions" time="10.768" classname="com.turbopro.company.Divisions" />
+                <testcase name="deleteDivision" time="1.249" classname="com.turbopro.company.Divisions" />
+                <testcase name="createDivision" time="0.901" classname="com.turbopro.company.Divisions" />
+                <testcase name="divisions" time="9.982" classname="com.turbopro.company.Divisions" />
+                <testcase name="inactiveDivision" time="0.388" classname="com.turbopro.company.Divisions" />
+      
+</testsuite>

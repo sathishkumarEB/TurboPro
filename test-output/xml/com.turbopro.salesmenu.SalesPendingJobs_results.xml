@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runPendingJobs"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="13.835">
+  <properties />
+  
+  
+            <testcase name="viewPendingJobs" time="1.484" classname="com.turbopro.salesmenu.SalesPendingJobs" />
+                <testcase name="sortPendingJobs" time="1.386" classname="com.turbopro.salesmenu.SalesPendingJobs" />
+                <testcase name="viewColumnsInPendingJobs" time="1.980" classname="com.turbopro.salesmenu.SalesPendingJobs" />
+                <testcase name="login" time="8.985" classname="com.turbopro.salesmenu.SalesPendingJobs" />
+      
+</testsuite>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="runAwardedContractors(failed)">
+    <classes>
+      <class name="com.turbopro.salesmenu.SalesAwardedContractors">
+        <methods>
+          <include name="sortAwardedContractors"/>
+          <include name="awardedContractorColumns"/>
+          <include name="teardown"/>
+          <include name="viewAwardedContractors"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.turbopro.salesmenu.SalesAwardedContractors -->
+    </classes>
+  </test> <!-- runAwardedContractors(failed) -->
+  <test thread-count="5" name="runSalesBidList(failed)">
+    <classes>
+      <class name="com.turbopro.salesmenu.SalesBidList">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="viewBidListWithoutPageBreak"/>
+          <include name="viewBidListWithPageBreak"/>
+          <include name="viewPDF"/>
+          <include name="teardown"/>
+          <include name="viewBidList"/>
+          <include name="closeBidList"/>
+        </methods>
+      </class> <!-- com.turbopro.salesmenu.SalesBidList -->
+    </classes>
+  </test> <!-- runSalesBidList(failed) -->
+  <test thread-count="5" name="runUpcomingBids(failed)">
+    <classes>
+      <class name="com.turbopro.salesmenu.SalesUpcomingBids">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="teardown"/>
+          <include name="upcomingBidsOpen"/>
+          <include name="viewAddedJobInUpcomingBids"/>
+          <include name="sortUpcomingBids"/>
+          <include name="viewUpcomingBidsByColumns"/>
+        </methods>
+      </class> <!-- com.turbopro.salesmenu.SalesUpcomingBids -->
+    </classes>
+  </test> <!-- runUpcomingBids(failed) -->
+</suite> <!-- Failed suite [Suite] -->

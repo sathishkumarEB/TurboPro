@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runChartOfAccounts"
+           tests="6"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="137.812">
+  <properties />
+  
+  
+            <testcase name="chartOfAccounts" time="10.103" classname="com.turbopro.company.ChartOfAccounts" />
+                <testcase name="viewChartOfAccounts" time="1.890" classname="com.turbopro.company.ChartOfAccounts" />
+                <testcase name="addAccount" time="1.379" classname="com.turbopro.company.ChartOfAccounts" />
+                <testcase name="searchSpecificAccount" time="1.138" classname="com.turbopro.company.ChartOfAccounts" />
+                <testcase name="viewAdditionalAccounts" time="1.585" classname="com.turbopro.company.ChartOfAccounts" />
+                <testcase name="deleteAccount" time="121.717" classname="com.turbopro.company.ChartOfAccounts" />
+      
+</testsuite>

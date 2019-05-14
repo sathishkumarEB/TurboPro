@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<!-- Suite -->
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+
+	<test name="runBookingProfit">
+		<classes>
+			<class name="com.turbopro.reports.BookingProfit" />
+		</classes>
+	</test>
+
+	<test name="runReportsOpenJobs">
+		<classes>
+			<class name="com.turbopro.reports.ReportsOpenJobs" />
+		</classes>
+	</test>
+
+	<test name="runReportsOpenPO">
+		<classes>
+			<class name="com.turbopro.reports.ReportsOpenPO" />
+		</classes>
+	</test>
+
+	<test name="runReportsPositivePay">
+		<classes>
+			<class name="com.turbopro.reports.ReportsPositivePay" />
+		</classes>
+	</test>
+
+</suite>

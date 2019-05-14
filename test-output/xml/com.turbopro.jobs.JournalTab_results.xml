@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runJobJournalTab"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="56.349">
+  <properties />
+  
+  
+            <testcase name="addJournalEntry" time="7.132" classname="com.turbopro.jobs.JournalTab" />
+                <testcase name="editJournalEntry" time="6.943" classname="com.turbopro.jobs.JournalTab" />
+                <testcase name="journalTab" time="37.798" classname="com.turbopro.jobs.JournalTab" />
+                <testcase name="deleteJournalEntry" time="4.476" classname="com.turbopro.jobs.JournalTab" />
+      
+</testsuite>

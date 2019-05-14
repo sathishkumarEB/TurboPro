@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<!-- Suite -->
+<listeners>
+<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+</listeners>
+
+<test name="runCustomerUnappliedPayments">
+<classes>
+<class name="com.turbopro.customermenu.CustomerUnappliedPayments">
+
+<methods>
+<include name="customerUnappliedPayments"/>
+<include name="searchCusBasedUnappliedPayments"/>
+<include name="searchUnappliedPaymentByDate"/>
+<include name="sortUnappliedPayments"/>
+<include name="paySingleInvoice"/>
+<include name="sortUnappliedPaymentInvoices"/>
+</methods>
+
+</class>
+</classes>
+</test>
+</suite>
+

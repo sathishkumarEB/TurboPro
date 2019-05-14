@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runCreditDebitMemo"
+           tests="8"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="283.148">
+  <properties />
+  
+  
+            <testcase name="editDebitMemo" time="8.686" classname="com.turbopro.customermenu.CreditDebitMemo" />
+                <testcase name="creditDebitMemo" time="10.762" classname="com.turbopro.customermenu.CreditDebitMemo" />
+                <testcase name="viewPDF" time="6.251" classname="com.turbopro.customermenu.CreditDebitMemo" />
+                <testcase name="createCreditMemo" time="115.728" classname="com.turbopro.customermenu.CreditDebitMemo" />
+                <testcase name="editCreditMemo" time="7.288" classname="com.turbopro.customermenu.CreditDebitMemo" />
+                <testcase name="viewMemo" time="126.363" classname="com.turbopro.customermenu.CreditDebitMemo" />
+                <testcase name="createDebitMemo" time="0.666" classname="com.turbopro.customermenu.CreditDebitMemo" />
+                <testcase name="emailMemo" time="7.404" classname="com.turbopro.customermenu.CreditDebitMemo" />
+      
+</testsuite>

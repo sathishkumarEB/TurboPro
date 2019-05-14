@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<!-- Suite -->
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="runCreditsTab">
+		<classes>
+			<class name="com.turbopro.jobs.CreditTab">
+				<methods>
+					<include name="creditTab" />
+					<include name="changeCreditStatus" />
+					<include name="AddBondAgentDetails" />
+					<include name="selectFinalWaiver" />
+					<include name="addNotes" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="runCustomerInvoicesInsideJob">
+		<classes>
+			<class name="com.turbopro.jobs.CustomerInvoiceInsideJob">
+				<methods>
+					<include name="login" />
+					<include name="createJob" />
+					<include name="dropship" />
+					<include name="CIforDropship" />
+
+					<include name="stockorder" />
+					<include name="CIforStockorder" />
+
+					<!-- include name="billonly"/ -->
+					<!-- include name="CIforBillonly"/ -->
+
+					<include name="service" />
+					<include name="CIforService" />
+
+					<include name="dropshipMultipleLineitems" />
+					<include name="CIforDropship1" />
+
+					<include name="dropshipImportXml" />
+					<include name="CIforDropship2" />
+
+					<include name="partialCIForSO" />
+
+					<include name="dropship1" />
+					<include name="CIforDropship3" />
+					<include name="viewPdfAfterCheckingDoNotEmail" />
+
+					<include name="dropship2" />
+					<include name="CIforDropship4" />
+					<include name="updateCI" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="runFinancialsTab">
+		<classes>
+			<class name="com.turbopro.jobs.FinancialsTab">
+				<methods>
+					<include name="financialTab" />
+					<include name="viewFinancialReport" />
+					<include name="addInvoice" />
+					<include name="viewInvoice" />
+					<include name="viewOutstandingInvoiceStatement" />
+					<include name="viewInvoiceSummary" />
+					<include name="editIncludeTax" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="runJobMainTab">
+		<classes>
+			<class name="com.turbopro.jobs.JobMainTab">
+				<methods>
+					<include name="navigateReleaseInNewJob" />
+					<include name="updateCustomerName" />
+					<include name="updateJobLocation" />
+					<include name="updateEmployeesAssigned" />
+					<include name="addNewArchitect" />
+					<include name="addNewEngineer" />
+					<include name="changeTaxTerritory" />
+					<include name="addSplitCommission" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="runJobQuotesTab">
+		<classes>
+			<class name="com.turbopro.jobs.JobQuotes">
+				<methods>
+					<include name="navigateQuotesInNewJob" />
+					<include name="createBidder" />
+					<include name="editBidder" />
+					<include name="deleteBidder" />
+					<include name="createQuote" />
+					<include name="editQuote" />
+					<include name="copyQuote" />
+					<include name="deleteQuote" />
+					<include name="updateAmount" />
+					<include name="sendQuotes" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="runJobJournalTab">
+		<classes>
+			<class name="com.turbopro.jobs.JournalTab">
+				<methods>
+					<include name="journalTab" />
+					<include name="addJournalEntry" />
+					<include name="editJournalEntry" />
+					<include name="deleteJournalEntry" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="runSubmittalTab">
+		<classes>
+			<class name="com.turbopro.jobs.SubmittalTab">
+				<methods>
+					<include name="financialTab" />
+					<include name="addSubmittalDetails" />
+					<include name="addOMManualDetails" />
+					<include name="editQuantity" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="runVendorInvoiceInsideJob">
+		<classes>
+			<class name="com.turbopro.jobs.VendorInvoiceInsideJob">
+				<methods>
+					<include name="login" />
+					<include name="createJob" />
+					<include name="dropship" />
+					<include name="VIforDropship" />
+
+					<include name="dropship1" />
+					<include name="changeVendorName" />
+
+					<include name="partialVendorInvoice" />
+
+					<include name="dropship" />
+					<include name="updateLineItems" />
+
+					<include name="VIforImportedDropship" />
+
+					<include name="updateVI" />
+
+					<include name="addFreightToVI" />
+
+					<include name="VIforCommissionOrder" />
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</suite>
+
+
+
+

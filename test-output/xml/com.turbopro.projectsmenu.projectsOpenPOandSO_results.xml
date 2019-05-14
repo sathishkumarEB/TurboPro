@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runProjectsOpenPOandSO"
+           tests="5"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="46.607">
+  <properties />
+  
+  
+            <testcase name="sortingInOpenPoSo" time="21.718" classname="com.turbopro.projectsmenu.ProjectsOpenPOandSO" />
+                <testcase name="viewOpenPoSoByDateRange" time="5.825" classname="com.turbopro.projectsmenu.ProjectsOpenPOandSO" />
+                <testcase name="openPoSoInProjects" time="0.563" classname="com.turbopro.projectsmenu.ProjectsOpenPOandSO" />
+                <testcase name="projects" time="13.834" classname="com.turbopro.projectsmenu.ProjectsOpenPOandSO" />
+                <testcase name="navigatePagesInOpenPoSo" time="4.667" classname="com.turbopro.projectsmenu.ProjectsOpenPOandSO" />
+      
+</testsuite>

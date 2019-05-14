@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runBankingDetails"
+           tests="6"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="56.065">
+  <properties />
+  
+  
+            <testcase name="deleteBank" time="1.725" classname="com.turbopro.banking.BankingDetails" />
+                <testcase name="addBank" time="3.961" classname="com.turbopro.banking.BankingDetails" />
+                <testcase name="updateBankAccount" time="5.587" classname="com.turbopro.banking.BankingDetails" />
+                <testcase name="inactivateAccount" time="0.610" classname="com.turbopro.banking.BankingDetails" />
+                <testcase name="navigateBanking" time="43.697" classname="com.turbopro.banking.BankingDetails" />
+                <testcase name="viewBanking" time="0.485" classname="com.turbopro.banking.BankingDetails" />
+      
+</testsuite>

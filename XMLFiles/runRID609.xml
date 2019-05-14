@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<!-- Suite -->
+<listeners>
+<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+</listeners>
+
+<test name="TestRID609">
+<classes>
+<class name="com.turbopro.requirements.RID609">
+<methods>
+<include name="login"/>
+<include name="createJob"/>
+<include name="quotes"/>
+<include name="createQuoteFromTemplate"/>
+
+<include name="deleteQuote"/>
+<include name="createQuoteByMultipleTemplates"/>
+
+<include name="deleteLineItemsInQuotes"/>
+<include name="cutAndPasteLineItemsInQuotes"/>
+
+<include name="copyAndPasteLineItemsInQuotes"/>
+<include name="cancelCutActionInQuotes"/>
+
+<include name="cancelCopyActionInQuotes"/>
+<include name="saveQuoteAsTemplate"/>
+
+<include name="deleteLineItemsAndCloseWithoutSave"/>
+<include name="deleteLineItemsAndSaveWhileClosing"/>
+
+<include name="openSavedTemplate"/>
+
+<include name="viewSavedTemplatePdf"/>
+<include name="updateTemplateDescription"/>
+<include name="deleteQuoteTemplate"/>
+
+<include name="createQuoteTemplate"/>
+
+</methods>
+
+
+</class>
+</classes>
+</test>
+</suite>
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runReportsPositivePay"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="21.662">
+  <properties />
+  
+  
+            <testcase name="login" time="11.675" classname="com.turbopro.reports.ReportsPositivePay" />
+                <testcase name="submitPositivePay" time="2.828" classname="com.turbopro.reports.ReportsPositivePay" />
+                <testcase name="selectCheckDate" time="2.637" classname="com.turbopro.reports.ReportsPositivePay" />
+                <testcase name="openPositivePay" time="4.522" classname="com.turbopro.reports.ReportsPositivePay" />
+      
+</testsuite>

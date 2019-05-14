@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runReportsOpenJobs"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="85.189">
+  <properties />
+  
+  
+            <testcase name="viewPrintReports" time="23.342" classname="com.turbopro.reports.ReportsOpenJobs" />
+                <testcase name="viewPrintReportsForCusAndSalesRep" time="25.274" classname="com.turbopro.reports.ReportsOpenJobs" />
+                <testcase name="login" time="12.911" classname="com.turbopro.reports.ReportsOpenJobs" />
+                <testcase name="viewPreviewReports" time="23.662" classname="com.turbopro.reports.ReportsOpenJobs" />
+      
+</testsuite>

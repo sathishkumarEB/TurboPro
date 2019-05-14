@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="OrderPoints"
+           tests="6"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="165.689">
+  <properties />
+  
+  
+            <testcase name="printReorderedPoints" time="29.439" classname="com.turbopro.inventory.OrderPoints" />
+                <testcase name="orderPoints" time="12.620" classname="com.turbopro.inventory.OrderPoints" />
+                <testcase name="ViewOrderPoints" time="0.592" classname="com.turbopro.inventory.OrderPoints" />
+                <testcase name="sortHeaders" time="0.660" classname="com.turbopro.inventory.OrderPoints" />
+                <testcase name="searchItem" time="0.740" classname="com.turbopro.inventory.OrderPoints" />
+                <testcase name="editOrderPoints" time="121.638" classname="com.turbopro.inventory.OrderPoints" />
+      
+</testsuite>
