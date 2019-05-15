@@ -66,8 +66,8 @@ public class Inventory extends Methods {
 	public void navigateInventory() throws InterruptedException, Exception
 	{
 		loggingIn(Url, UName, Password);
-		getWait().until(ExpectedConditions.visibilityOfElementLocated(By.id("mainmenuInventoryPage")));
-		getid("mainmenuInventoryPage").click();
+		waitforid("mainmenuInventoryPage");
+		getxpath(inventoryLink).click();
 	}
 
 	/*Searching specific inventory item*/
@@ -76,13 +76,14 @@ public class Inventory extends Methods {
 	{
 		try{
 			Thread.sleep(4000);
-			getid("searchJob").click();
-			getid("searchJob").clear();
-			getid("searchJob").sendKeys("DMRR0604"); //searched inventory item is "DMRR0604"
-			getid("goSearchButtonID").click();
+			getxpath(inventorySearch).click();
+			getxpath(inventorySearch).click();
+			getxpath(inventorySearch).clear();
+			getxpath(inventorySearch).sendKeys("DMRR0604"); //searched inventory item is "DMRR0604"
+			getxpath(inventoryGoButton).click();
 			Thread.sleep(2000);
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@onclick='updateInventoryDetails()']")));
-			getxpath("//input[@onclick='updateInventoryDetails()']").click();
+			waitforxpath("//input[@onclick='updateInventoryDetails()']");
+			getxpath(inventoryDetailSaveAndCloseButton).click();
 		}
 		catch(Exception e)
 		{
@@ -99,15 +100,16 @@ public class Inventory extends Methods {
 			Thread.sleep(3000);
 			driver.navigate().refresh();
 			Thread.sleep(3000);
-			getid("mainmenuInventoryPage").click();
+			getxpath(inventoryLink).click();
 			Thread.sleep(3000);
-			getid("searchJob").click();
-			getid("searchJob").clear();
-			getid("searchJob").sendKeys("DMRR");
-			getid("goSearchButtonID").click();
+			getxpath(inventorySearch).click();
+			getxpath(inventorySearch).click();
+			getxpath(inventorySearch).clear();
+			getxpath(inventorySearch).sendKeys("DMRR"); //searched inventory item which starts with DMRR
+			getxpath(inventoryGoButton).click();
 			Thread.sleep(3000);
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='1']/td[3]")));
-			getid("resetbutton").click();
+			waitforxpath("//*[@id='1']/td[3]");
+			getxpath(inventoryResetButton).click();
 		}
 		catch(Exception e)
 		{
@@ -122,14 +124,14 @@ public class Inventory extends Methods {
 	public void sortInventoryByWarehouse() throws InterruptedException, Exception
 	{
 		try{
-			Select Warehouse = new Select(driver.findElement(By.id("bankAccountsID")));
+			Select Warehouse = new Select(getxpath(inventoryWarehouseDropdown));
 			Warehouse.selectByVisibleText("FT WORTH");
 			Thread.sleep(6000);
 			Warehouse.selectByVisibleText("Houston");
 			Thread.sleep(6000);
 			Warehouse.selectByVisibleText("Austin");
 			Thread.sleep(6000);
-			getid("resetbutton").click();
+			getxpath(inventoryResetButton).click();
 			driver.navigate().refresh();
 		}
 		catch(Exception e)
@@ -147,9 +149,9 @@ public class Inventory extends Methods {
 	{
 		try{
 			Thread.sleep(6000);
-			getid("inactivelist").click();
+			getxpath(inventoryInactiveCheckbox).click();
 			Thread.sleep(4000);
-			getid("inactivelist").click();
+			getxpath(inventoryInactiveCheckbox).click();
 		}
 		catch(Exception e)
 		{
@@ -164,6 +166,9 @@ public class Inventory extends Methods {
 	{
 		try{
 			Thread.sleep(4000);
+			getxpath(inventoryAddButton).click();
+			
+			
 			getid("addCustomersButton").click();
 			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.id("codeId")));
 			getid("codeId").sendKeys("TestInv1");
