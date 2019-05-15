@@ -182,7 +182,7 @@ public class Methods
 	
 	/*Objects for Add/Edit Bidder*/
 	public final static String jobQuotesBidder = "//*[@id=\"bidder\"]";
-	public final static String jobQuotesContact = "//*[@id=\"contacthiddenID\"]";
+	public final static String jobQuotesContact = "//*[@id=\"contactId\"]";
 	public final static String jobQuotesType = "//*[@id=\"customer_quoteType\"]";
 	public final static String jobQuotesSubmit = "//*[@onclick=\"submitBid()\"]";
 	public final static String jobQuotesCancel = "//*[@onclick=\"cancelBid()\"]";
@@ -197,6 +197,66 @@ public class Methods
 	public final static String jobQuotesAddQuoteButton = "//*[@id=\"addquotegridButton\"]";
 	public final static String jobQuotesSaveQuoteButton = "//*[@id=\"SaveQuoteButtonID\"]";
 	public final static String jobQuotesCloseQuoteButton = "//*[@id=\"CloseQuoteButtonID\"]";
+	
+	
+	
+	
+	
+	/*Objects for Inventory module*/
+	public final static String inventoryLink = "//*[@id=\"mainmenuInventoryPage\"]/a";
+	public final static String inventorySearch = "//*[@id=\"searchJob\"]";
+	public final static String inventoryGoButton = "//*[@id=\"goSearchButtonID\"]";
+	public final static String inventoryResetButton = "//*[@id=\"resetbutton\"]";
+	public final static String inventoryWarehouseDropdown = "//*[@id=\"bankAccountsID\"]";
+	public final static String inventoryInactiveCheckbox = "//*[@id=\"inactivelist\"]";
+	public final static String inventoryAddButton = "//*[@id=\"addCustomersButton\"]";
+	public final static String inventoryPreviousButton = "//*[@id=\"previousButton\"]";
+	public final static String inventoryNextButton = "//*[@id=\"nextButton\"]";
+	
+	
+	/*Objects for Inventory Details module*/
+	public final static String inventoryDetailCode = "//*[@id=\"codeId\"]";
+	public final static String inventoryDetailDescription = "//*[@id=\"descriptionId\"]";
+	public final static String inventoryDetailDepartment = "//*[@id=\"departmentId\"]";
+	public final static String inventoryDetailInactive = "//*[@id=\"inactiveboxIDBox\"]";
+	public final static String inventoryDetailInventoryCheckbox = "//*[@id=\"inventoryIDBox\"]";
+	public final static String inventoryDetailConsignmentCheckbox = "//*[@id=\"consignmentIDBox\"]";
+	public final static String inventoryDetailCategory = "//*[@id=\"categoryId\"]";
+	public final static String inventoryDetailBox = "//*[@id=\"boxId\"]";
+	public final static String inventoryDetailWeight = "//*[@id=\"weightId\"]";
+	public final static String inventoryDetailLbs = "//*[@id=\"ouncesId\"]";
+	public final static String inventoryDetailBinPerWarehouseDropdown = "//*[@id=\"binId\"]";
+	public final static String inventoryDetailBinPerWarehouseText = "//*[@id=\"bingeneralId\"]";
+	public final static String inventoryDetailPOCheckBox = "//*[@id=\"poIDBox\"]";
+	public final static String inventoryDetailSOCheckBox = "//*[@id=\"soIDBox\"]";
+	public final static String inventoryDetailInvoiceCheckBox = "//*[@id=\"invoiceIDBox\"]";
+	public final static String inventoryDetailPickTicketCheckBox = "//*[@id=\"pickTicketIDBox\"]";
+	public final static String inventoryDetailProductWebPage = "";
+	public final static String inventoryDetailOnHandSearch = "";
+	public final static String inventoryDetailAllocatedSearch = "";
+	public final static String inventoryDetailAvailableSearch = "";
+	public final static String inventoryDetailOnOrderSearch = "";
+	public final static String inventoryDetailSubmitted = "";
+	public final static String inventoryDetailYTDSearch = "";
+	public final static String inventoryDetailPrimaryVendor = "";
+	public final static String inventoryDetailVendorItemCode = "";
+	public final static String inventoryDetailBaseSellingPrice = "";
+	public final static String inventoryDetailTaxableCheckbox = "";
+	public final static String inventoryDetailSingleItemTax = "";
+	public final static String inventoryDetailSecondaryVendors = "";
+	public final static String inventoryDetailMultiplier = "";
+	public final static String inventoryDetailFactoryCost = "";
+	public final static String inventoryDetailSalesOrderPopupContent = "";
+	public final static String inventoryDetailInvoicePopupContent = "";
+	public final static String inventoryDetailPurchaseOrderPopupContent = "";
+	public final static String inventoryDetailSaveButton = "";
+	public final static String inventoryDetailCloseButton = "";
+	public final static String inventoryDetailSaveAndCloseButton = "//input[@onclick='updateInventoryDetails()']";
+
+	
+	
+	
+	
 	
 	
 	
