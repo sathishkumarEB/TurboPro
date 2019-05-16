@@ -79,8 +79,10 @@ public class InventoryAdjustments extends Methods {
 	public void sortHeader() throws InterruptedException, Exception
 	{
 		try{
-			driver.findElement(By.id("jqgh_chartsOfTransferInventoryGrid_transferDate")).click(); 
-			driver.findElement(By.xpath("//*[@id='jqgh_chartsOfTransferInventoryGrid_transferDate']/span/span[2]")).click();
+			getxpath(inventoryAdjustTransferDateHeader).click();
+			waitforxpath("//*[@id='jqgh_chartsOfTransferInventoryGrid_transferDate']/span/span[2]");
+			getxpath(inventoryAdjustTransferDateHeader).click();
+			//			driver.findElement(By.xpath("//*[@id='jqgh_chartsOfTransferInventoryGrid_transferDate']/span/span[2]")).click();
 		}
 		catch(Exception e)
 		{
@@ -94,31 +96,35 @@ public class InventoryAdjustments extends Methods {
 	public void createNewAdjustment() throws InterruptedException, Exception
 	{
 		try{
-			driver.findElement(By.id("transferDateID")).click();
-			driver.findElement(By.id("transferDateID")).click();
-			driver.findElement(By.linkText("12")).click();
-			Actions act = new Actions(driver);
-			act.moveToElement(driver.findElement(By.id("warehouseListID"))).click().build().perform();
-			Select warehouse = new Select(driver.findElement(By.id("warehouseListID")));
+			getxpath(inventoryAdjustDate).click();
+			getxpath(inventoryAdjustDate).click();
+			getlinktext("12").click();
+
+
+
+			//			Actions act = new Actions(driver);
+			//			act.moveToElement(getxpath(inventoryAdjustWarehouse)).click().build().perform();
+			Select warehouse = new Select(getxpath(inventoryAdjustWarehouse));
 			warehouse.selectByVisibleText(InventoryWarehouse1); //select the warehouse as "FT WORTH"
 			Thread.sleep(1000);
-			driver.findElement(By.id("referenceID")).click();
-			driver.findElement(By.id("referenceID")).clear();
-			driver.findElement(By.id("referenceID")).sendKeys(Description);
-			Actions act1 = new Actions(driver);
-			act1.moveToElement(driver.findElement(By.id("reasonCodeID"))).click().build().perform();
-			Select reason = new Select(driver.findElement(By.id("reasonCodeID")));
+			getxpath(inventoryAdjustReference).click();
+			getxpath(inventoryAdjustReference).clear();
+			getxpath(inventoryAdjustReference).sendKeys(Description);
+			//			Actions act1 = new Actions(driver);
+			//			act1.moveToElement(getxpath(inventoryAdjustReasonCode)).click().build().perform();
+			Select reason = new Select(getxpath(inventoryAdjustReasonCode));
 			reason.selectByVisibleText("Damaged");
-			driver.findElement(By.xpath("//*[@id='chartsOfTransferListGrid_iladd']/div")).click(); 
-			driver.findElement(By.id("new_row_itemCode")).click();
-			driver.findElement(By.id("new_row_itemCode")).clear();
-			driver.findElement(By.id("new_row_itemCode")).sendKeys(LineItem); //line item is "DMRR0604"
+			getxpath(inventoryAdjustAdd).click();
+			waitforxpath(inventoryAdjustProductNo);
+			getxpath(inventoryAdjustProductNo).click();
+			getxpath(inventoryAdjustProductNo).clear();
+			getxpath(inventoryAdjustProductNo).sendKeys(LineItem); //line item is "DMRR0604"
 			driver.findElement(By.xpath("//a[text()='"+LineItem+"']")).click();
-			driver.findElement(By.id("new_row_quantityTransfered")).click();
-			driver.findElement(By.id("new_row_quantityTransfered")).clear();
-			driver.findElement(By.id("new_row_quantityTransfered")).sendKeys(Count);
-			driver.findElement(By.id("chartsOfTransferListGrid_ilsave")).click(); 
-			driver.findElement(By.id("saveIAButtonID")).click();
+			getxpath(inventoryAdjustQty).click();
+			getxpath(inventoryAdjustQty).clear();
+			getxpath(inventoryAdjustQty).sendKeys(Count);
+			getxpath(inventoryAdjustSave).click();
+			getxpath(inventoryAdjustSaveAndClose).click();
 		}
 		catch(Exception e)
 		{
@@ -133,12 +139,14 @@ public class InventoryAdjustments extends Methods {
 	{
 		try{
 			Thread.sleep(2000);
-			driver.findElement(By.xpath("//table[@id = 'chartsOfTransferInventoryGrid']/tbody/tr[3]/td[5] ")).click();
-			Actions act = new Actions(driver);
-			act.moveToElement(driver.findElement(By.id("warehouseListID"))).click().build().perform();
-			Select warehouse = new Select(driver.findElement(By.id("warehouseListID")));
+			getxpath("//table[@id = 'chartsOfTransferInventoryGrid']/tbody/tr[3]/td[5] ").click();
+			//			Actions act = new Actions(driver);
+			//			act.moveToElement(driver.findElement(By.id("warehouseListID"))).click().build().perform();
+
+			getxpath(inventoryAdjustWarehouse);
+			Select warehouse = new Select(getxpath(inventoryAdjustWarehouse));
 			warehouse.selectByVisibleText("DALLAS");
-			driver.findElement(By.id("saveIAButtonID")).click();
+			getxpath(inventoryAdjustSaveAndClose).click();
 		}
 		catch(Exception e)
 		{
@@ -153,8 +161,8 @@ public class InventoryAdjustments extends Methods {
 	{
 		try{
 			Thread.sleep(3000);
-			driver.findElement(By.xpath("//table[@id = 'chartsOfTransferInventoryGrid']/tbody/tr[5]/td[5] ")).click();
-			driver.findElement(By.id("clearIAButtonID")).click();
+			getxpath("//table[@id = 'chartsOfTransferInventoryGrid']/tbody/tr[5]/td[5] ").click();
+			getxpath(inventoryAdjustClear).click();
 		}
 		catch(Exception e)
 		{

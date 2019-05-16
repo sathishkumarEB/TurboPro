@@ -167,22 +167,19 @@ public class Inventory extends Methods {
 		try{
 			Thread.sleep(4000);
 			getxpath(inventoryAddButton).click();
-			
-			
-			getid("addCustomersButton").click();
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.id("codeId")));
-			getid("codeId").sendKeys("TestInv1");
-			getid("descriptionId").sendKeys("TestInventoryNumber1");
-			Select Department = new Select(driver.findElement(By.id("departmentId")));
+			waitforxpath(inventoryDetailCode);
+			getxpath(inventoryDetailCode).sendKeys("TestInv1");
+			getxpath(inventoryDetailDescription).sendKeys("TestInventoryNumber1");
+			Select Department = new Select(driver.findElement(By.xpath(inventoryDetailDepartment)));
 			Department.selectByVisibleText("ENGINEERING");
-			getid("inventoryIDBox").click();
-			if(driver.findElement(By.id("ui-dialog-title-1")).isDisplayed())
+			getxpath(inventoryDetailInventoryCheckbox).click();
+			if(getid("ui-dialog-title-1").isDisplayed())
 			{
 				getxpath("//div[(contains(@style,'display: block;'))]/div[11]/div/button[1]").click();
 			}
-			getxpath("//input[@value='Save']").click();
+			getxpath(inventoryDetailSaveButton).click();
 			Thread.sleep(3000);
-			getxpath("//input[@value='Save & Close']").click();
+			getxpath(inventoryDetailSaveAndCloseButton).click();
 		}
 		catch(Exception e)
 		{
@@ -197,17 +194,17 @@ public class Inventory extends Methods {
 	{
 		try{
 			Thread.sleep(4000);
-			getid("searchJob").click();
-			getid("searchJob").clear();
-			getid("searchJob").sendKeys("TestInv1");
-			getid("goSearchButtonID").click();
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.id("multiplierId")));
-			getid("multiplierId").sendKeys("1");
-			getid("factoryCostId").clear();
-			getid("factoryCostId").sendKeys("2.5");
-			getxpath("//input[@value='Save']").click();
+			getxpath(inventorySearch).click();
+			getxpath(inventorySearch).clear();
+			getxpath(inventorySearch).sendKeys("TestInv1");
+			getxpath(inventoryGoButton).click();
+			waitforxpath(inventoryDetailMultiplier);
+			getxpath(inventoryDetailMultiplier).sendKeys("1");
+			getxpath(inventoryDetailFactoryCost).clear();
+			getxpath(inventoryDetailFactoryCost).sendKeys("2.5");
+			getxpath(inventoryDetailSaveButton).click();
 			Thread.sleep(3000);
-			getxpath("//input[@value='Save & Close']").click();
+			getxpath(inventoryDetailSaveAndCloseButton).click();
 			Thread.sleep(3000);
 			driver.navigate().refresh();
 			Thread.sleep(3000);
@@ -226,23 +223,23 @@ public class Inventory extends Methods {
 	{
 		try{
 			Thread.sleep(4000);
-			getid("searchJob").click();
-			getid("searchJob").clear();
-			getid("searchJob").sendKeys("TestInv1");
-			getid("goSearchButtonID").click();
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.id("deleteInventory")));
-			getid("deleteInventory").click();
-			if(driver.findElement(By.id("ui-dialog-title-1")).isDisplayed())
+			getxpath(inventorySearch).click();
+			getxpath(inventorySearch).clear();
+			getxpath(inventorySearch).sendKeys("TestInv1");
+			getxpath(inventoryGoButton).click();
+			waitforxpath(inventoryDetailDeleteButton);
+			getxpath(inventoryDetailDeleteButton).click();
+			if(getid("ui-dialog-title-1").isDisplayed())
 			{
 				getxpath("//div[(contains(@style,'display: block;'))]/div[11]/div/button[1]").click();
 			}
 			Thread.sleep(2000);
-			if(driver.findElement(By.id("ui-dialog-title-1")).isDisplayed())
+			if(getid("ui-dialog-title-1").isDisplayed())
 			{
 				getxpath("//div[(contains(@style,'display: block;'))]/div[11]/div/button[1]").click();
 			}
 			Thread.sleep(3000);
-			getid("resetbutton").click();
+			getxpath(inventoryResetButton).click();
 			Thread.sleep(3000);
 		}
 		catch(Exception e)
@@ -257,11 +254,11 @@ public class Inventory extends Methods {
 	public void openInventoryItem() throws InterruptedException, Exception
 	{
 		try{
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='1']/td[5]")));
+			waitforxpath("//*[@id='1']/td[5]");
 			Actions openInv = new Actions(driver);
-			openInv.moveToElement(driver.findElement(By.xpath("//*[@id='1']/td[5]"))).doubleClick().perform();
+			openInv.moveToElement(getxpath("//*[@id='1']/td[5]")).doubleClick().perform();
 			Thread.sleep(3000);
-			getxpath("//input[@value='Save & Close']").click();
+			getxpath(inventoryDetailSaveAndCloseButton).click();
 		}
 		catch(Exception e)
 		{
@@ -276,25 +273,25 @@ public class Inventory extends Methods {
 	{
 		try{
 			Thread.sleep(4000);
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='1']/td[5]")));
+			waitforxpath("//*[@id='1']/td[5]");
 			Actions openInv = new Actions(driver);
-			openInv.moveToElement(driver.findElement(By.xpath("//*[@id='1']/td[5]"))).doubleClick().perform();
+			openInv.moveToElement(getxpath("//*[@id='1']/td[5]")).doubleClick().perform();
 			Thread.sleep(3000);
 
 			for(int next = 1; next<=9; next++)
 			{
-				getid("nextButton").click();
+				getxpath(inventoryNextButton).click();
 				Thread.sleep(3000);
 			}
 
 			for(int previous = 1; previous<=9; previous++)
 			{
-				getid("previousButton").click();
+				getxpath(inventoryPreviousButton).click();
 				Thread.sleep(3000);
 			}
 
 			Thread.sleep(3000);
-			getxpath("//input[@value='Save & Close']").click();
+			getxpath(inventoryDetailSaveAndCloseButton).click();
 		}
 		catch(Exception e)
 		{
@@ -308,6 +305,6 @@ public class Inventory extends Methods {
 	@AfterTest
 	public void teardown() 
 	{
-		driver.quit();
+//		driver.quit();
 	}
 }
