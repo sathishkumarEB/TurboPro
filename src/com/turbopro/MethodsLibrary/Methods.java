@@ -231,28 +231,47 @@ public class Methods
 	public final static String inventoryDetailSOCheckBox = "//*[@id=\"soIDBox\"]";
 	public final static String inventoryDetailInvoiceCheckBox = "//*[@id=\"invoiceIDBox\"]";
 	public final static String inventoryDetailPickTicketCheckBox = "//*[@id=\"pickTicketIDBox\"]";
-	public final static String inventoryDetailProductWebPage = "";
-	public final static String inventoryDetailOnHandSearch = "";
-	public final static String inventoryDetailAllocatedSearch = "";
-	public final static String inventoryDetailAvailableSearch = "";
-	public final static String inventoryDetailOnOrderSearch = "";
-	public final static String inventoryDetailSubmitted = "";
-	public final static String inventoryDetailYTDSearch = "";
-	public final static String inventoryDetailPrimaryVendor = "";
-	public final static String inventoryDetailVendorItemCode = "";
-	public final static String inventoryDetailBaseSellingPrice = "";
-	public final static String inventoryDetailTaxableCheckbox = "";
-	public final static String inventoryDetailSingleItemTax = "";
-	public final static String inventoryDetailSecondaryVendors = "";
-	public final static String inventoryDetailMultiplier = "";
-	public final static String inventoryDetailFactoryCost = "";
-	public final static String inventoryDetailSalesOrderPopupContent = "";
-	public final static String inventoryDetailInvoicePopupContent = "";
-	public final static String inventoryDetailPurchaseOrderPopupContent = "";
-	public final static String inventoryDetailSaveButton = "";
-	public final static String inventoryDetailCloseButton = "";
+	public final static String inventoryDetailProductWebPage = "//*[@id=\"productSiteId\"]";
+	public final static String inventoryDetailOnHandSearch = "//*[@id=\"inventoryDetailsFormId\"]/div/table[1]/tbody/tr[1]/td[2]/table/tbody/tr[1]/td/fieldset/table/tbody/tr[2]/td[2]/img";
+	public final static String inventoryDetailAllocatedSearch = "//*[@id=\"inventoryDetailsFormId\"]/div/table[1]/tbody/tr[1]/td[2]/table/tbody/tr[1]/td/fieldset/table/tbody/tr[3]/td[2]/img";
+	public final static String inventoryDetailAvailableSearch = "//*[@id=\"inventoryDetailsFormId\"]/div/table[1]/tbody/tr[1]/td[2]/table/tbody/tr[1]/td/fieldset/table/tbody/tr[4]/td[2]/img";
+	public final static String inventoryDetailOnOrderSearch = "//*[@id=\"inventoryDetailsFormId\"]/div/table[1]/tbody/tr[1]/td[2]/table/tbody/tr[1]/td/fieldset/table/tbody/tr[5]/td[2]/img";
+	public final static String inventoryDetailSubmitted = "//*[@id=\"inventoryDetailsFormId\"]/div/table[1]/tbody/tr[1]/td[2]/table/tbody/tr[1]/td/fieldset/table/tbody/tr[6]/td[2]/img";
+	public final static String inventoryDetailYTDSearch = "//*[@id=\"inventoryDetailsFormId\"]/div/table[1]/tbody/tr[1]/td[2]/table/tbody/tr[1]/td/fieldset/table/tbody/tr[7]/td[2]/img";
+	public final static String inventoryDetailPrimaryVendor = "//*[@id=\"primaryVendorId\"]";
+	public final static String inventoryDetailVendorItemCode = "//*[@id=\"VendorItemCodeId\"]";
+	public final static String inventoryDetailBaseSellingPrice = "//*[@id=\"sellingPriceId\"]";
+	public final static String inventoryDetailTaxableCheckbox = "//*[@id=\"taxableIDBox\"]";
+	public final static String inventoryDetailSingleItemTax = "//*[@id=\"singleItemIDBox\"]";
+	public final static String inventoryDetailSecondaryVendors = "//*[@value=\"Secondary Vendors\"]";
+	public final static String inventoryDetailMultiplier = "//*[@id=\"multiplierId\"]";
+	public final static String inventoryDetailFactoryCost = "//*[@id=\"factoryCostId\"]";
+	public final static String inventoryDetailSalesOrderPopupContent = "//*[@id=\"salesOrderSelectedId\"]";
+	public final static String inventoryDetailInvoicePopupContent = "//*[@id=\"invoiceSelectedId\"]";
+	public final static String inventoryDetailPurchaseOrderPopupContent = "//*[@id=\"purchaseOrderSelectedId\"]";
+	public final static String inventoryDetailSaveButton = "//*[@value=\"Save\"]";
+	public final static String inventoryDetailDeleteButton = "//*[@id=\"deleteInventory\"]";
 	public final static String inventoryDetailSaveAndCloseButton = "//input[@onclick='updateInventoryDetails()']";
 
+	/*Objects for Inventory Adjustments module*/
+	public final static String inventoryAdjustTransferDateHeader = "//*[@id=\"jqgh_chartsOfTransferInventoryGrid_transferDate\"]";
+	public final static String inventoryAdjustReferenceHeader = "//*[@id=\"jqgh_chartsOfTransferInventoryGrid_desc\"]";
+	public final static String inventoryAdjustDate = "//*[@id=\"transferDateID\"]";
+	public final static String inventoryAdjustWarehouse = "//*[@id=\"warehouseListID\"]";
+	public final static String inventoryAdjustReference = "//*[@id=\"referenceID\"]";
+	public final static String inventoryAdjustReasonCode = "//*[@id=\"reasonCodeID\"]";
+	public final static String inventoryAdjustAdd = "//*[@id=\"chartsOfTransferListGrid_iladd\"]/div";
+	public final static String inventoryAdjustEdit = "//*[@id=\"chartsOfTransferListGrid_iledit\"]/div";
+	public final static String inventoryAdjustSave = "//*[@id=\"chartsOfTransferListGrid_ilsave\"]/div";
+	public final static String inventoryAdjustDelete = "//*[@id=\"copyrowcustombutton\"]/div";
+	public final static String inventoryAdjustSaveAndClose = "//*[@id=\"saveIAButtonID\"]";
+	public final static String inventoryAdjustClear = "//*[@id=\"clearIAButtonID\"]";
+	public final static String inventoryAdjustProductNo = "//*[@id=\"new_row_itemCode\"]";
+	public final static String inventoryAdjustQty = "//*[@id=\"new_row_quantityTransfered\"]";
+	
+	
+	
+	
 	
 	
 	
