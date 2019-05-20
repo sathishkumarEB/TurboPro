@@ -23,8 +23,6 @@ import org.testng.annotations.Test;
 import com.turbopro.MethodsLibrary.Methods;
 
 public class InventoryCategories extends Methods {
-	private StringBuffer verificationErrors = new StringBuffer();
-	String ourPO = "";
 
 	private String Url, UName, Password, Description;
 	FileInputStream fis;
@@ -83,13 +81,12 @@ public class InventoryCategories extends Methods {
 	public void addCategory() throws InterruptedException, Exception
 	{
 		try{
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.id("categoryDescription")));
-			driver.findElement(By.id("categoryDescription")).click();
-			driver.findElement(By.id("categoryDescription")).clear();
-			driver.findElement(By.id("categoryDescription")).sendKeys(Description);// Enter description
-
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@onclick = 'SaveCategoryDetails()']")));
-			driver.findElement(By.xpath("//input[@onclick = 'SaveCategoryDetails()']")).click();// click save
+			waitforid("categoryDescription");
+			getxpath(inventoryCategoryDesc).click();
+			getxpath(inventoryCategoryDesc).clear();
+			getxpath(inventoryCategoryDesc).sendKeys(Description);// Enter description
+			waitforxpath(inventoryCategorySave);
+			getxpath(inventoryCategorySave).click();
 			Thread.sleep(3000);
 		}
 		catch(Exception e)
@@ -104,12 +101,11 @@ public class InventoryCategories extends Methods {
 	public void viewCategoryDetails() throws InterruptedException, Exception
 	{
 		try{
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//td[@title = 'Four']")));
-			driver.findElement(By.xpath("//td[@title = 'Four']")).click();// select category Four
+			waitforxpath("//td[@title = 'Four']");
+			getxpath("//td[@title = 'Four']").click();// select category Four
 			Thread.sleep(2000);
-
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//td[@title = 'Eleven']")));
-			driver.findElement(By.xpath("//td[@title = 'Eleven']")).click();//Select category Eleven
+			waitforxpath("//td[@title = 'Eleven']");
+			getxpath("//td[@title = 'Eleven']").click();//Select category Eleven
 		}
 		catch(Exception e)
 		{
@@ -123,12 +119,12 @@ public class InventoryCategories extends Methods {
 	public void deleteCategory() throws InterruptedException, Exception
 	{
 		try{
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//td[@title = 'Testing']")));
-			driver.findElement(By.xpath("//td[@title = 'Testing']")).click();// select category Testing
+			waitforxpath("//td[@title = 'Testing']");
+			getxpath("//td[@title = 'Testing']").click();// select category Testing
 			Thread.sleep(2000);
 
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@onclick = 'deleteCategoryDetails()']")));
-			driver.findElement(By.xpath("//input[@onclick = 'deleteCategoryDetails()']")).click();//Select delete
+			waitforxpath("//input[@onclick = 'deleteCategoryDetails()']");
+			getxpath(inventoryCategoryDelete).click(); //Clicking delete button
 			Thread.sleep(3000);
 		}
 		catch(Exception e)
@@ -143,15 +139,13 @@ public class InventoryCategories extends Methods {
 	public void inactivateCategory() throws InterruptedException, Exception
 	{
 		try{
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='4']/td[3]")));
-			driver.findElement(By.xpath("//*[@id='4']/td[3]")).click();// select category Five
+			waitforxpath("//*[@id='4']/td[3]");
+			getxpath("//*[@id='4']/td[3]").click();		// select category Five
 			Thread.sleep(2000);
-
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.id("categoryInactive")));
-			driver.findElement(By.id("categoryInactive")).click();//Select inactive check box
-
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@onclick = 'SaveCategoryDetails()']")));
-			driver.findElement(By.xpath("//input[@onclick = 'SaveCategoryDetails()']")).click();//click save
+			waitforxpath(inventoryCategoryInactive);
+			getxpath(inventoryCategoryInactive).click();	//Select inactive check box
+			waitforxpath(inventoryCategorySave);
+			getxpath(inventoryCategorySave).click();
 			Thread.sleep(3000);
 		}
 		catch(Exception e)
@@ -166,15 +160,14 @@ public class InventoryCategories extends Methods {
 	public void activateCategory() throws InterruptedException, Exception
 	{
 		try{
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='4']/td[3]")));
-			driver.findElement(By.xpath("//*[@id='4']/td[3]")).click();// select category Five
+			waitforxpath("//*[@id='4']/td[3]");
+			getxpath("//*[@id='4']/td[3]").click();	// select category Five
 			Thread.sleep(2000);
-
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.id("categoryInactive")));
-			driver.findElement(By.id("categoryInactive")).click();//Select inactive check box
-
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@onclick = 'SaveCategoryDetails()']")));
-			driver.findElement(By.xpath("//input[@onclick = 'SaveCategoryDetails()']")).click();//click save
+			waitforxpath(inventoryCategoryInactive);
+			getxpath(inventoryCategoryInactive).click();	//Select inactive check box
+			
+			waitforxpath(inventoryCategorySave);
+			getxpath(inventoryCategorySave).click(); 	//click save button
 			Thread.sleep(3000);
 		}
 		catch(Exception e)
@@ -189,12 +182,11 @@ public class InventoryCategories extends Methods {
 	public void sortHeaders() throws InterruptedException, Exception
 	{
 		try{
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.id("jqgh_inventoryCategoriesGrid_description")));
-			driver.findElement(By.id("jqgh_inventoryCategoriesGrid_description")).click(); // select category header
+			waitforid("jqgh_inventoryCategoriesGrid_description");
+			getid("jqgh_inventoryCategoriesGrid_description").click(); // select category header
 			Thread.sleep(2000);
-
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='jqgh_inventoryCategoriesGrid_description']/span/span[2]")));
-			driver.findElement(By.xpath("//*[@id='jqgh_inventoryCategoriesGrid_description']/span/span[2]")).click(); //Sort category header
+			waitforxpath("//*[@id='jqgh_inventoryCategoriesGrid_description']/span/span[2]");
+			getxpath("//*[@id='jqgh_inventoryCategoriesGrid_description']/span/span[2]").click(); //Sort category header
 		}
 		catch(Exception e)
 		{
