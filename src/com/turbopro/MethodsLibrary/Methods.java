@@ -269,12 +269,59 @@ public class Methods
 	public final static String inventoryAdjustProductNo = "//*[@id=\"new_row_itemCode\"]";
 	public final static String inventoryAdjustQty = "//*[@id=\"new_row_quantityTransfered\"]";
 	
+	/*Objects for Inventory Categories module */
+	public final static String inventoryCategoryHeader = "//*[@id=\"jqgh_inventoryCategoriesGrid_description\"]";
+	public final static String inventoryCategoryDesc = "//*[@id=\"categoryDescription\"]";
+	public final static String inventoryCategoryInactive = "//*[@id=\"categoryInactive\"]";
+	public final static String inventoryCategoryOverideCheckbox = "//*[@id=\"overrideMarkup\"]";
+	public final static String inventoryCategoryOverideText = "//*[@id=\"overrideInput\"]";
+	public final static String inventoryCategoryClear = "//*[@id=\"inventoryCategoriesDetails\"]/fieldset/div/input[1]";
+	public final static String inventoryCategoryDelete = "//input[@onclick = 'deleteCategoryDetails()']";
+	public final static String inventoryCategorySave = "//input[@onclick = 'SaveCategoryDetails()']";
+	
+	/*Objects for Inventory Warehouses module*/
+	public final static String inventoryWarehouseDescription = "//*[@id=\"description\"]";
+	public final static String inventoryWarehouseInactiveCheckbox = "//input[@class=\"warehouseInactivecheckbox\"]";
+	public final static String inventoryWarehouseCompany = "//div[@id=\"warehouse\"]/form/fieldset/table/tbody/tr[2]/td/fieldset/table/tbody/tr/td/input[@id=\"companyName\"]";
+	public final static String inventoryWarehouseAddress1 = "//form[@id=\"warehouseDetails\"]/fieldset/table/tbody/tr[3]/td//input[@id=\"Address1\"]";
+	public final static String inventoryWarehouseAddress2 = "//form[@id=\"warehouseDetails\"]/fieldset/table/tbody/tr[3]/td//input[@id=\"Address2\"]";
+	public final static String inventoryWarehouseCity = "//form[@id=\"warehouseDetails\"]/fieldset/table/tbody/tr[3]/td//input[@id=\"city\"]";
+	public final static String inventoryWarehouseZip = "//form[@id=\"warehouseDetails\"]/fieldset/table/tbody/tr[3]/td//input[@id=\"zip\"]";
+	public final static String inventoryWarehouseAdditionalLine = "//form[@id=\"warehouseDetails\"]/fieldset/table/tbody/tr[3]/td//input[@id=\"additionaladdressLine\"]";
+	public final static String inventoryWarehouseAsset = "//*[@id=\"asset\"]";
+	public final static String inventoryWarehouseAdjustmentCOG = "//*[@id=\"adjustcog\"]";
+	public final static String inventoryWarehouseTaxTerritory = "//*[@id=\"taxTerritory\"]";
+	public final static String inventoryWarehouseEmail = "//*[@id=\"emailPickUp\"]";
+	public final static String inventoryWarehouseAddButton = "//*[@id=\"warehouseDlg\"]";
+	public final static String inventoryWarehouseSaveButton = "//*[@id=\"warehouseDetails\"]/fieldset/input[2]";
+	public final static String inventoryWarehouseDeleteButton = "//*[@id=\"warehouseDetails\"]/fieldset/input[1]";
+	public final static String inventoryWarehouseAddDescription = "//*[@id=\"adddescription\"]";
+	public final static String inventoryWarehouseAddInactive = "//form[@id=\"addNewWarehouseForm\"]/fieldset/table/tbody/tr/td/fieldset//td/input[@id=\"warehouseInactive\"]";
+	public final static String inventoryWarehouseAddCompanyName = "//form[@id=\"addNewWarehouseForm\"]/fieldset/table/tbody/tr/td/fieldset//td/input[@id=\"companyName\"]";
+	public final static String inventoryWarehouseAddAddress1 = "//form[@id=\"addNewWarehouseForm\"]/fieldset/table/tbody/tr/td/fieldset//td/input[@id=\"Address1\"]";
+	public final static String inventoryWarehouseAddAddress2 = "//form[@id=\"addNewWarehouseForm\"]/fieldset/table/tbody/tr/td/fieldset//td/input[@id=\"Address2\"]";
+	public final static String inventoryWarehouseAddCity = "//form[@id=\"addNewWarehouseForm\"]/fieldset/table/tbody/tr/td/fieldset//td/input[@id=\"addcity\"]";
+	public final static String inventoryWarehouseAddState = "//form[@id=\"addNewWarehouseForm\"]/fieldset/table/tbody/tr/td/fieldset//td/input[@id=\"addstate\"]";
+	public final static String inventoryWarehouseAddZip = "//form[@id=\"addNewWarehouseForm\"]/fieldset/table/tbody/tr/td/fieldset//td/input[@id=\"addzip\"]";
+	public final static String inventoryWarehouseAddAdditionalLine = "//form[@id=\"addNewWarehouseForm\"]/fieldset/table/tbody/tr/td/fieldset//td/input[@id=\"additionaladdressLine\"]";
+	public final static String inventoryWarehouseAddAsset = "//*[@id=\"addasset\"]";
+	public final static String inventoryWarehouseAddAdjustCOG = "//*[@id=\"addAdjustcog\"]";
+	public final static String inventoryWarehouseAddTaxTerritory = "//*[@id=\"addtaxTerritory\"]";
+	public final static String inventoryWarehouseAddEmail = "//*[@id=\"addemailPickUp\"]";
+	public final static String inventoryWarehouseAddDotMatrixRadioButton = "//*[@value=\"dotMatrix\"]";
+	public final static String inventoryWarehouseAddLaserRadioButton = "//*[@value=\"laser\"]";
+	public final static String inventoryWarehouseAddAssignAPrinter = "//*[@value=\"Assign a Printer\"]";
+	public final static String inventoryWarehouseAddSaveAndClose = "//*[@id=\"saveTermsButton\"]";
+	public final static String inventoryWarehouseAddCloseIcon = "//*[@id=\"saveTermsButton\"]";
 	
 	
-	
-	
-	
-	
+	/*Objects for Inventory Count module*/
+	public final static String inventoryCountWarehouseDropdown = "//*[@id=\"warehouseListID\"]";
+	public final static String inventoryCountSortDropdown = "//*[@id=\"sortId\"]";
+	public final static String inventoryCountSearchInventory = "//*[@id=\"searchInventory\"]";
+	public final static String inventoryCountPdfButton = "//*[@id=\"getPdfButton\"]";
+	public final static String inventoryCountCSVIcon = "//*[@id=\"accountsPayableImgID\"]/img";
+	public final static String inventoryCountSaveButton = "//*[@id=\"saveCountInventoryButtonID\"]";
 	
 	
 	
