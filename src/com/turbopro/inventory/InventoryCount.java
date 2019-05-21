@@ -79,9 +79,9 @@ public class InventoryCount extends Methods {
 	public void selectWarehouse() throws InterruptedException, Exception
 	{
 		try{
-			driver.findElement(By.id("warehouseListID")).click();
+			getxpath(inventoryCountWarehouseDropdown).click();
 			Thread.sleep(2000);
-			Select warehouse = new Select(driver.findElement(By.id("warehouseListID")));
+			Select warehouse = new Select(getxpath(inventoryCountWarehouseDropdown));
 			Thread.sleep(2000);
 			warehouse.selectByVisibleText("FT WORTH");
 			Thread.sleep(5000);
@@ -98,10 +98,10 @@ public class InventoryCount extends Methods {
 	public void selectSort() throws InterruptedException, Exception
 	{
 		try{
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.id("sortId")));
-			driver.findElement(By.id("sortId")).click();
+			waitforxpath(inventoryCountSortDropdown);
+			getxpath(inventoryCountSortDropdown).click();
 			Thread.sleep(2000);
-			Select sort = new Select(driver.findElement(By.id("sortId")));
+			Select sort = new Select(getxpath(inventoryCountSortDropdown));
 			Thread.sleep(2000);
 			sort.selectByVisibleText(" Product Description ");
 			Thread.sleep(5000);
@@ -118,14 +118,14 @@ public class InventoryCount extends Methods {
 	public void countUpdate() throws InterruptedException, Exception
 	{
 		try{
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='1']/td[13]")));
-			driver.findElement(By.xpath("//*[@id='1']/td[13]")).click();
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.id("1_Counted")));
-			driver.findElement(By.id("1_Counted")).click();
-			driver.findElement(By.id("1_Counted")).clear();
-			driver.findElement(By.id("1_Counted")).sendKeys(Count + Keys.ENTER);
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.id("saveCountInventoryButtonID")));
-			driver.findElement(By.id("saveCountInventoryButtonID")).click();// click save
+			waitforxpath("//*[@id='1']/td[13]");
+			getxpath("//*[@id='1']/td[13]").click();
+			waitforid("1_Counted");
+			getid("1_Counted").click();
+			getid("1_Counted").clear();
+			getid("1_Counted").sendKeys(Count + Keys.ENTER);
+			waitforxpath(inventoryCountSaveButton);
+			getxpath(inventoryCountSaveButton).click();		// click save
 			Thread.sleep(3000);
 		}
 		catch(Exception e)
@@ -140,8 +140,8 @@ public class InventoryCount extends Methods {
 	public void viewPDF() throws InterruptedException, Exception
 	{
 		try{
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.id("getPdfButton")));
-			driver.findElement(By.id("getPdfButton")).click();
+			waitforxpath(inventoryCountPdfButton);
+			getxpath(inventoryCountPdfButton).click();
 			parentWindow();
 		}
 		catch(Exception e)
@@ -156,8 +156,8 @@ public class InventoryCount extends Methods {
 	public void viewCSV() throws InterruptedException, Exception
 	{
 		try{
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='accountsPayableImgID']/img")));
-			driver.findElement(By.xpath("//*[@id='accountsPayableImgID']/img")).click();// click to view CSV report
+			waitforxpath(inventoryCountCSVIcon);
+			getxpath(inventoryCountCSVIcon).click();
 			Thread.sleep(3000);
 		}
 		catch(Exception e)
@@ -170,7 +170,7 @@ public class InventoryCount extends Methods {
 	@AfterTest
 	public void teardown() 
 	{
-		driver.quit();
+//		driver.quit();
 	}
 
 }
