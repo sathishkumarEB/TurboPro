@@ -22,7 +22,7 @@ import org.testng.annotations.Test;
 import com.turbopro.MethodsLibrary.Methods;
 
 public class InventoryTransaction extends Methods {
-	private StringBuffer verificationErrors = new StringBuffer();
+//	private StringBuffer verificationErrors = new StringBuffer();
 
 	private String Url, UName, Password, LineItem;
 	FileInputStream fis;
@@ -78,12 +78,12 @@ public class InventoryTransaction extends Methods {
 	public void viewTransaction() throws InterruptedException, Exception
 	{
 		try{
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.id("searchJob")));
-			driver.findElement(By.id("searchJob")).click();
-			driver.findElement(By.id("searchJob")).clear();
-			driver.findElement(By.id("searchJob")).sendKeys(LineItem);
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//body/ul[13]/li/a")));	
-			driver.findElement(By.xpath("//body/ul[13]/li/a")).click();
+			waitforxpath(inventoryTransactionsSearch);
+			getxpath(inventoryTransactionsSearch).click();
+			getxpath(inventoryTransactionsSearch).clear();
+			getxpath(inventoryTransactionsSearch).sendKeys(LineItem);
+			waitforxpath("//body/ul[13]/li/a");	
+			getxpath("//body/ul[13]/li/a").click();
 		}
 		catch(Exception e)
 		{
@@ -97,19 +97,14 @@ public class InventoryTransaction extends Methods {
 	public void viewTransactionInDifferentWarehouse() throws InterruptedException, Exception
 	{
 		try{
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.id("searchJob")));
-			driver.findElement(By.id("searchJob")).click();
-			driver.findElement(By.id("searchJob")).clear();
-			driver.findElement(By.id("searchJob")).sendKeys(LineItem);
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//body/ul[13]/li/a")));	
-			driver.findElement(By.xpath("//body/ul[13]/li/a")).click();
-			driver.findElement(By.id("warehouseListID")).click();
+			this.viewTransaction();
+			getxpath(inventoryTransactionsWarehouse).click();
 			Thread.sleep(2000);
-			Select memotype = new Select(driver.findElement(By.id("warehouseListID")));
+			Select memotype = new Select(getxpath(inventoryTransactionsWarehouse));
 			Thread.sleep(2000);
 			memotype.selectByVisibleText("FT WORTH");
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//body/div[1]/div[2]/table[3]/tbody/tr/td[3]/input[1]")));
-			driver.findElement(By.xpath("//body/div[1]/div[2]/table[3]/tbody/tr/td[3]/input[1]")).click();
+			waitforxpath("//body/div[1]/div[2]/table[3]/tbody/tr/td[3]/input[1]");
+			getxpath("//body/div[1]/div[2]/table[3]/tbody/tr/td[3]/input[1]").click();
 			Thread.sleep(3000);
 		}
 		catch(Exception e)
@@ -124,22 +119,23 @@ public class InventoryTransaction extends Methods {
 	public void setDateRange() throws InterruptedException, Exception
 	{
 		try{
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.id("fromDateID")));
-			driver.findElement(By.id("fromDateID")).click();
-			Thread.sleep(2000);
-			driver.findElement(By.id("fromDateID")).click();
+			waitforxpath(inventoryTransactionsDateFrom);
+			getxpath(inventoryTransactionsDateFrom).click();
+			Thread.sleep(3000);
+			getxpath(inventoryTransactionsDateFrom).click();
 			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.linkText("10")));
-			driver.findElement(By.linkText("10")).click();
+			getlinktext("10").click();
 			Thread.sleep(3000);
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.id("toDateID")));
-			driver.findElement(By.id("toDateID")).click();
-			Thread.sleep(2000);
-			driver.findElement(By.id("toDateID")).click();
+			waitforxpath(inventoryTransactionsDateThrough);
+			getxpath(inventoryTransactionsDateThrough).click();
+			Thread.sleep(3000);
+			getxpath(inventoryTransactionsDateThrough).click();
 			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.linkText("20")));
-			driver.findElement(By.linkText("20")).click();
+			getlinktext("20").click();
 			Thread.sleep(3000);
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//body/div[1]/div[2]/table[3]/tbody/tr/td[3]/input[1]")));
-			driver.findElement(By.xpath("//body/div[1]/div[2]/table[3]/tbody/tr/td[3]/input[1]")).click();
+			waitforxpath(inventoryTransactionsDateGo);
+			getxpath(inventoryTransactionsDateGo).click();
+			Thread.sleep(3000);
 		}
 		catch(Exception e)
 		{
@@ -153,13 +149,11 @@ public class InventoryTransaction extends Methods {
 	public void clearTransactions() throws InterruptedException, Exception
 	{
 		try{
-			viewTransactionInDifferentWarehouse();
-			setDateRange();
+			this.viewTransactionInDifferentWarehouse();
+			this.setDateRange();
 			Thread.sleep(3000);
-			//		WebDriverWait wait = new WebDriverWait(driver, 30);
-			//		wait.until(ExpectedConditions.elementToBeClickable(By.id("resetbutton")));
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@value = 'Clear']")));
-			driver.findElement(By.xpath("//input[@value = 'Clear']")).click();
+			waitforxpath(inventoryTransactionsDateClear);
+			getxpath(inventoryTransactionsDateClear).click();
 		}
 		catch(Exception e)
 		{
@@ -173,15 +167,10 @@ public class InventoryTransaction extends Methods {
 	public void printTransactionDetails() throws InterruptedException, Exception
 	{
 		try{
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.id("searchJob")));
-			driver.findElement(By.id("searchJob")).click();
-			driver.findElement(By.id("searchJob")).clear();
-			driver.findElement(By.id("searchJob")).sendKeys(LineItem);
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//body/ul[13]/li/a")));	
-			driver.findElement(By.xpath("//body/ul[13]/li/a")).click();
+			this.viewTransaction();
 			Thread.sleep(3000);
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//body/div[1]/div[4]/table/tbody/tr/td/input")));
-			driver.findElement(By.xpath("//body/div[1]/div[4]/table/tbody/tr/td/input")).click();
+			waitforxpath("//body/div[1]/div[4]/table/tbody/tr/td/input");
+			getxpath("//body/div[1]/div[4]/table/tbody/tr/td/input").click();
 			parentWindow();
 		}
 		catch(Exception e)

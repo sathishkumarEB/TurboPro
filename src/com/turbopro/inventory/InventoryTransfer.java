@@ -24,8 +24,6 @@ import org.testng.annotations.Test;
 import com.turbopro.MethodsLibrary.Methods;
 
 public class InventoryTransfer extends Methods{
-	private StringBuffer verificationErrors = new StringBuffer();
-	String ourPO = "";
 
 	private String Url, UName, Password, LineItem, Quantity1, TransNo,  Reference, Quantity;
 	FileInputStream fis;
@@ -86,10 +84,10 @@ public class InventoryTransfer extends Methods{
 	public void sortInventory() throws InterruptedException, Exception
 	{
 		try{
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='jqgh_transferGrid_transferDate']")));
-			driver.findElement(By.xpath("//*[@id='jqgh_transferGrid_transferDate']")).click();
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='jqgh_transferGrid_transferDate']")));
-			driver.findElement(By.xpath("//*[@id='jqgh_transferGrid_transferDate']/span/span[2]")).click();
+			waitforxpath("//*[@id='jqgh_transferGrid_transferDate']");
+			getxpath("//*[@id='jqgh_transferGrid_transferDate']").click();
+			waitforxpath("//*[@id='jqgh_transferGrid_transferDate']");
+			getxpath("//*[@id='jqgh_transferGrid_transferDate']/span/span[2]").click();
 		}
 		catch(Exception e)
 		{
@@ -103,61 +101,51 @@ public class InventoryTransfer extends Methods{
 	public void addTransfer() throws InterruptedException, Exception
 	{
 		try{
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='jqgridLine']/table/tbody/tr/td/table/tbody/tr/td[1]/input")));
-			driver.findElement(By.xpath("//*[@id='jqgridLine']/table/tbody/tr/td/table/tbody/tr/td[1]/input")).click();
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.id("transferDateId")));
-			driver.findElement(By.id("transferDateId")).click();
+			waitforxpath(inventoryTransferAddButton);
+			getxpath(inventoryTransferAddButton).click();
+			waitforxpath(inventoryTransferDate);
+			getxpath(inventoryTransferDate).click();
 			Thread.sleep(2000);
-			driver.findElement(By.id("transferDateId")).click();
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.linkText("10")));
-			driver.findElement(By.linkText("10")).click();
+			waitforlinktext("10");
+			getlinktext("10").click();
 			Thread.sleep(3000);
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.id("estDateId")));
-			driver.findElement(By.id("estDateId")).click();
+			waitforxpath(inventoryTransferEstRecdDate);
+			getxpath(inventoryTransferEstRecdDate).click();
+			waitforlinktext("11");
+			getlinktext("11").click();
 			Thread.sleep(2000);
-			driver.findElement(By.id("estDateId")).click();
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.linkText("11")));
-			driver.findElement(By.linkText("11")).click();
-			Thread.sleep(3000);
-			driver.findElement(By.id("ref")).click();
-			driver.findElement(By.id("ref")).clear();
-			driver.findElement(By.id("ref")).sendKeys(Reference);// Enter reference
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.id("warehouseFrom")));
-			Actions act = new Actions(driver);
+			getxpath(inventoryTransferReference).click();
+			getxpath(inventoryTransferReference).clear();
+			getxpath(inventoryTransferReference).sendKeys(Reference);	// Enter reference
 			Thread.sleep(2000);
-			act.moveToElement(driver.findElement(By.id("warehouseFrom"))).click().build().perform();
-			Thread.sleep(2000);
-			Select warehouseFrom = new Select(driver.findElement(By.id("warehouseFrom")));
+			Select warehouseFrom = new Select(getxpath(inventoryTransferFrom));
 			Thread.sleep(2000);
 			warehouseFrom.selectByVisibleText("Fort Worth");
 			Thread.sleep(3000);
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.id("warehouseTo")));
-			act.moveToElement(driver.findElement(By.id("warehouseTo"))).click().build().perform();
-			Thread.sleep(2000);
-			Select warehouseTo = new Select(driver.findElement(By.id("warehouseTo")));
+			Select warehouseTo = new Select(getxpath(inventoryTransferTo));
 			Thread.sleep(3000);
-			warehouseTo.selectByValue("2");
+			warehouseTo.selectByVisibleText("Houston");
 			Thread.sleep(3000);
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='add_addtransferGrid']/div/span")));
-			driver.findElement(By.xpath("//*[@id='add_addtransferGrid']/div/span")).click();
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.id("itemCode")));
-			driver.findElement(By.id("itemCode")).click();
+			waitforxpath(inventoryTransferAddIcon);
+			getxpath(inventoryTransferAddIcon).click();
+			waitforxpath(inventoryTransferProductNo);
+			getxpath(inventoryTransferProductNo).click();
 			Thread.sleep(2000);
-			driver.findElement(By.id("itemCode")).sendKeys(LineItem);
-			driver.findElement(By.id("itemCode")).sendKeys(Keys.ARROW_DOWN);
-			driver.findElement(By.id("itemCode")).sendKeys(Keys.RETURN);
+			getxpath(inventoryTransferProductNo).sendKeys(LineItem);
+			getxpath(inventoryTransferProductNo).sendKeys(Keys.ARROW_DOWN);
+			getxpath(inventoryTransferProductNo).sendKeys(Keys.RETURN);
 			Thread.sleep(3000);
-//			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//body/ul[14]/li/a")));	
-//			driver.findElement(By.xpath("//body/ul[14]/li/a")).click();
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.id("quantityTransfered")));
-			driver.findElement(By.id("quantityTransfered")).click();
+			waitforxpath("//body/ul[14]/li/a");	
+			getxpath("//body/ul[14]/li/a").click();
+			waitforxpath(inventoryTransferQtyTransfer);
+			getxpath(inventoryTransferQtyTransfer).click();
 			Thread.sleep(2000);
-			driver.findElement(By.id("quantityTransfered")).sendKeys(Quantity);
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.id("sData")));
-			driver.findElement(By.id("sData")).click();
+			getxpath(inventoryTransferQtyTransfer).sendKeys(Quantity);
+			waitforxpath(inventoryTransferSubmit);
+			getxpath(inventoryTransferSubmit).click();
 			Thread.sleep(2000);
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.id("WarehouseTransferID")));
-			driver.findElement(By.id("WarehouseTransferID")).click();
+			waitforxpath(inventoryTransferSaveAndClose);
+			getxpath(inventoryTransferSaveAndClose).click();
 			Thread.sleep(2000);
 		}
 		catch(Exception e)
@@ -172,14 +160,14 @@ public class InventoryTransfer extends Methods{
 	public void searchTransfer() throws InterruptedException, Exception
 	{
 		try{
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.id("searchJob")));
-			driver.findElement(By.id("searchJob")).click();
-			driver.findElement(By.id("searchJob")).clear();
-			driver.findElement(By.id("searchJob")).sendKeys(TransNo);
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='1']/td[4]")));	
-			driver.findElement(By.xpath("//*[@id='1']/td[4]")).click();
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.id("goSearchButtonID")));
-			driver.findElement(By.id("goSearchButtonID")).click();
+			waitforxpath(inventoryTransferSearch);
+			getxpath(inventoryTransferSearch).click();
+			getxpath(inventoryTransferSearch).clear();
+			getxpath(inventoryTransferSearch).sendKeys(TransNo);
+			waitforxpath("//*[@id='1']/td[4]");	
+			getxpath("//*[@id='1']/td[4]").click();
+			waitforxpath(inventoryTransferGo);
+			getxpath(inventoryTransferGo).click();
 		}
 		catch(Exception e)
 		{
@@ -193,21 +181,21 @@ public class InventoryTransfer extends Methods{
 	public void editTransfer() throws InterruptedException, Exception
 	{
 		try{
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='1']/td[3]")));
-			driver.findElement(By.xpath("//*[@id='1']/td[3]")).click();
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='jqgridLine']/table/tbody/tr/td/table/tbody/tr/td[2]/input")));	
-			driver.findElement(By.xpath("//*[@id='jqgridLine']/table/tbody/tr/td/table/tbody/tr/td[2]/input")).click();
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='edit_addtransferGrid']/div/span")));
-			driver.findElement(By.xpath("//*[@id='edit_addtransferGrid']/div/span")).click();
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.id("quantityTransfered")));
-			driver.findElement(By.id("quantityTransfered")).click();
-			driver.findElement(By.id("quantityTransfered")).clear();
+			waitforxpath("//*[@id='1']/td[3]");
+			getxpath("//*[@id='1']/td[3]").click();
+			waitforxpath(inventoryTransferEditButton);	
+			getxpath(inventoryTransferEditButton).click();
+			waitforxpath(inventoryTransferEditIcon);
+			getxpath(inventoryTransferEditIcon).click();
+			waitforxpath(inventoryTransferQtyTransfer);
+			getxpath(inventoryTransferQtyTransfer).click();
+			getxpath(inventoryTransferQtyTransfer).clear();
 			Thread.sleep(2000);
-			driver.findElement(By.id("quantityTransfered")).sendKeys(Quantity1);
-			getWait().until(ExpectedConditions.visibilityOfElementLocated(By.id("sData")));
-			driver.findElement(By.id("sData")).click();
+			getxpath(inventoryTransferQtyTransfer).sendKeys(Quantity1);
+			waitforxpath(inventoryTransferSubmit);
+			getxpath(inventoryTransferSubmit).click();
 			Thread.sleep(2000);
-			driver.findElement(By.xpath("//input[@onclick='saveTransfer()']")).click();
+			getxpath(inventoryTransferSaveAndClose).click();
 			Thread.sleep(3000);
 		}
 		catch(Exception e)
